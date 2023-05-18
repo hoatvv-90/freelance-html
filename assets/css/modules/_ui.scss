@@ -1,0 +1,32 @@
+/*
+    button
+*/
+a {
+    &:focus {
+        outline: none;
+    }
+}
+
+/*
+    To Top
+*/
+
+
+/*
+    Title Section
+*/
+
+/*
+    Btn Link
+*/
+
+.btn_link {
+    text-align: right;
+    a {
+        color: #96B95C;
+        font-size: 12px;
+        letter-spacing: 0.24px;
+        line-height: 22px;
+        font-weight: 500;
+    }
+}
