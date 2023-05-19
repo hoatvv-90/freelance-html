@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="77573be7-c028-4b92-bdee-f0d63db2f34a" name="Default Changelist" comment="" />
+    <list default="true" id="77573be7-c028-4b92-bdee-f0d63db2f34a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/freelance-html.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/freelance-html.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/config/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/config/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/modules/_ui.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/modules/_ui.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Image 18.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/copy_url.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/arrow.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/arrow.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/arrow_down.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/arrow_down.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_date.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_date.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_date_02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_date_02.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_faq.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_faq.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_heart.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_heart.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_heart_small.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_heart_small.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_item_01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_item_01.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_item_02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_item_02.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_item_03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_item_03.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_item_04.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_item_04.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_map.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_map.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_map_02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_map_02.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_phone.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_phone.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_play.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_search.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_search.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_star.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_star.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_03.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_04.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_04.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_06.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_06.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_07.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_07.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_08.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_08.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/icon_tlt_small_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/icon_tlt_small_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_bottom.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_bottom.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_box.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_box.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_brand_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_brand_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_brand_02.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_brand_02.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_icon_01.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_icon_01.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_note.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_note.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_note_02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_note_02.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_person_01.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_person_01.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_person_02.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_person_02.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_person_03.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_person_03.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_person_04.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_person_04.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_person_05.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_person_05.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_review.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_review.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/img_table.png" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/img_table.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/libs/css/splide.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/libs/css/splide.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/libs/js/dragscroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/libs/js/dragscroll.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/libs/js/splide.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/libs/js/splide.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/detail.html" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,58 +72,131 @@
     <session id="1067995308">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="2" />
-          <entry key="png" value="18" />
-          <entry key="scss" value="6" />
-          <entry key="svg" value="22" />
+          <entry key="js" value="2" />
+          <entry key="png" value="32" />
+          <entry key="scss" value="10" />
+          <entry key="svg" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="Image" value="18" />
-          <entry key="SCSS" value="6" />
-          <entry key="SVG" value="22" />
+          <entry key="Image" value="32" />
+          <entry key="JavaScript" value="2" />
+          <entry key="SCSS" value="10" />
+          <entry key="SVG" value="49" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="590" />
-          <entry key="scss" value="12" />
+          <entry key="html" value="2075" />
+          <entry key="js" value="18" />
+          <entry key="scss" value="4600" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="590" />
-          <entry key="SCSS" value="12" />
+          <entry key="HTML" value="2075" />
+          <entry key="JavaScript" value="18" />
+          <entry key="SCSS" value="4600" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="610">
-              <caret line="183" column="96" selection-start-line="183" selection-start-column="96" selection-end-line="183" selection-end-column="96" />
+            <state relative-caret-position="291">
+              <caret line="774" column="41" selection-start-line="774" selection-start-column="41" selection-end-line="774" selection-end-column="41" />
               <folding>
                 <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#ul#0;n#div#2;n#div#0;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#3;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#section#5;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#section#6;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#1;n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#2;n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#3;n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#li#4;n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#9;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="592">
+              <caret line="55" column="66" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="66" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/css/content/_detail.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="547">
+              <caret line="365" column="54" selection-start-line="365" selection-start-column="54" selection-end-line="365" selection-end-column="54" />
+              <folding>
+                <element signature="e#473#497#0" />
+                <element signature="e#1246#1270#0" />
+                <element signature="e#1444#2342#0" />
+                <element signature="e#4186#4218#0" />
+                <element signature="e#6102#6126#0" />
+                <element signature="e#7397#7421#0" />
+                <element signature="e#10115#10139#0" />
+                <element signature="e#10905#10929#0" />
+                <element signature="e#11618#11642#0" />
+                <element signature="e#12372#12396#0" />
+                <element signature="e#12647#12671#0" />
+                <element signature="e#12723#12755#0" />
+                <element signature="e#16958#17374#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/modules/_ui.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="488">
+              <caret line="357" column="34" selection-start-line="357" selection-start-column="34" selection-end-line="357" selection-end-column="34" />
+              <folding>
+                <element signature="e#102#4053#0" />
+                <element signature="e#2854#4051#0" />
+                <element signature="e#4212#4228#0" />
+                <element signature="e#1424#1598#0" />
+                <element signature="e#7346#8981#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/base/_common.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -72,12 +205,18 @@
         <entry file="file://$PROJECT_DIR$/assets/css/config/_variables.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
-              <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
+              <caret line="2" column="9" selection-start-line="2" selection-end-line="2" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>box_note</find>
+      <find>documents</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -88,10 +227,13 @@
         <option value="$PROJECT_DIR$/assets/css/base/_style.scss" />
         <option value="$PROJECT_DIR$/assets/css/base/_header.scss" />
         <option value="$PROJECT_DIR$/assets/css/base/_footer.scss" />
-        <option value="$PROJECT_DIR$/assets/css/modules/_ui.scss" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/assets/css/style.scss" />
         <option value="$PROJECT_DIR$/assets/css/config/_variables.scss" />
+        <option value="$PROJECT_DIR$/assets/css/modules/_ui.scss" />
         <option value="$PROJECT_DIR$/detail.html" />
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/assets/css/content/_detail.scss" />
       </list>
     </option>
   </component>
@@ -101,10 +243,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="25" />
     <option name="width" value="1440" />
-    <option name="height" value="825" />
+    <option name="height" value="818" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -114,6 +256,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,27 +286,12 @@
               <item name="freelance-html" type="b2602c69:ProjectViewProjectNode" />
               <item name="freelance-html" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freelance-html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="freelance-html" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="freelance-html" type="b2602c69:ProjectViewProjectNode" />
-              <item name="freelance-html" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -199,25 +327,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684390214671</updated>
-      <workItem from="1684390215910" duration="5546000" />
+      <workItem from="1684390215910" duration="12619000" />
+      <workItem from="1684459518557" duration="20919000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5546000" />
+    <option name="totallyTimeSpent" value="33538000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1440" height="825" extended-state="0" />
+    <frame x="0" y="25" width="1440" height="825" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2160229" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21888413" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -225,10 +349,15 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5020633" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -238,23 +367,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/base/_style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/base/_header.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/base/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -262,25 +374,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/modules/_ui.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="e#496#670#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon_heart_small.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon_heart.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/申請から受給までの期間で探す-1.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/申請から受給までの期間で探す-1.svg" />
     <entry file="file://$PROJECT_DIR$/assets/images/icon_play.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -290,68 +384,19 @@
     <entry file="file://$PROJECT_DIR$/assets/images/icon_phone.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/arrow_down.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/arrow.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_04.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_06.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/img_review.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/申請から受給までの期間で探す.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon_heart.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/申請から受給までの期間で探す.svg" />
     <entry file="file://$PROJECT_DIR$/assets/images/icon_item_03.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_03.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/Group 46.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_08.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/Image 18.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/口コミ@2x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/口コミ（青）@3x.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/書類＿青.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/電球.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/config/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/Group 46.svg" />
+    <entry file="file://$PROJECT_DIR$/assets/images/口コミ@2x.png" />
+    <entry file="file://$PROJECT_DIR$/assets/images/口コミ（青）@3x.png" />
+    <entry file="file://$PROJECT_DIR$/assets/images/書類＿青.png" />
+    <entry file="file://$PROJECT_DIR$/assets/images/電球.png" />
     <entry file="file://$PROJECT_DIR$/assets/images/img_icon_01.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/img_note.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_05.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/images/icon_item_01.svg">
@@ -366,20 +411,171 @@
     <entry file="file://$PROJECT_DIR$/assets/images/img_person_01.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_map_02.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_map.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_date.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/base/_common.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_heart.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_heart_small.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/img_note_02.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/img_note.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/img_note_item.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Group 151.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_01.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/arrow_down.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/arrow_top.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_03.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_04.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/arrow.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_05.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_06.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_08.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_small_01.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/img_bottom.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/img_box.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/arrow_comment.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/copy_url.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_tlt_07.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/img_person_03.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/images/icon_faq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/config/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="9" selection-start-line="2" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="183" column="96" selection-start-line="183" selection-start-column="96" selection-end-line="183" selection-end-column="96" />
+        <state relative-caret-position="291">
+          <caret line="774" column="41" selection-start-line="774" selection-start-column="41" selection-end-line="774" selection-end-column="41" />
           <folding>
             <element signature="n#script#0;n#head#0;n#html#0;n#!!top" />
             <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#1;n#div#0;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#ul#0;n#div#2;n#div#0;n#div#0;n#section#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#1;n#div#0;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#section#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#3;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#section#5;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#section#6;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#1;n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#2;n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#3;n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#li#4;n#ul#0;n#div#3;n#div#0;n#div#0;n#section#7;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#9;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="55" column="66" selection-start-line="55" selection-start-column="66" selection-end-line="55" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/modules/_ui.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="357" column="34" selection-start-line="357" selection-start-column="34" selection-end-line="357" selection-end-column="34" />
+          <folding>
+            <element signature="e#102#4053#0" />
+            <element signature="e#2854#4051#0" />
+            <element signature="e#4212#4228#0" />
+            <element signature="e#1424#1598#0" />
+            <element signature="e#7346#8981#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/content/_detail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="547">
+          <caret line="365" column="54" selection-start-line="365" selection-start-column="54" selection-end-line="365" selection-end-column="54" />
+          <folding>
+            <element signature="e#473#497#0" />
+            <element signature="e#1246#1270#0" />
+            <element signature="e#1444#2342#0" />
+            <element signature="e#4186#4218#0" />
+            <element signature="e#6102#6126#0" />
+            <element signature="e#7397#7421#0" />
+            <element signature="e#10115#10139#0" />
+            <element signature="e#10905#10929#0" />
+            <element signature="e#11618#11642#0" />
+            <element signature="e#12372#12396#0" />
+            <element signature="e#12647#12671#0" />
+            <element signature="e#12723#12755#0" />
+            <element signature="e#16958#17374#0" />
           </folding>
         </state>
       </provider>

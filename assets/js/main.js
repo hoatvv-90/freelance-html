@@ -11,12 +11,8 @@
     }
     // loading after
     window.onload = function () {
-        var splide = new Splide( '.slide_top', {
-            type   : 'loop',
-            padding: '20rem',
-        } );
+        scrollAnimation('.list_scroll a');
 
-        splide.mount();
     };
 
     function activeTab(obj) {
@@ -31,6 +27,42 @@
         return false;
     });
     activeTab($('.tab_nav li:first-child'));
+
+    $('.question').on('click', function () {
+        $(this).toggleClass('active');
+        const answer = $(this).next();
+        answer.slideToggle({
+            duration: 500,
+            step: function () {
+                if (answer.css('display') == 'block') {
+                    answer.css('display', 'flex');
+                }
+            },
+            complete: function () {
+                if (answer.css('display') == 'block') {
+                    answer.css('display', 'flex');
+                }
+            }
+        });
+    })
+
+    function scrollAnimation ( selector ) {
+        $(selector).click(function (e) {
+            let targetPage = $(this).attr("href");
+            if( targetPage.includes('#') ) {
+                let currentPage = $(`${targetPage}`);
+                if (currentPage.length > 0) {
+                    $('html, body').animate({
+                        scrollTop: $(currentPage).offset().top - 90
+                    }, 1000);
+                } else {
+                    let originName = window.location.origin;
+                    window.location.href = originName;
+                    localStorage.setItem('idSection', targetPage);
+                }
+            }
+        });
+    }
 
     //resize after
     window.onresize = function () {
