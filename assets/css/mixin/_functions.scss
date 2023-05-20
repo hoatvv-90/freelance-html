@@ -71,3 +71,32 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: $clamp;
 }
+
+@mixin text($font-size: "", $line-height: "", $color: "", $font-weight: "", $letter-spacing: "") {
+    font-size: $font-size;
+    line-height: $line-height;
+    color: $color;
+    font-weight: $font-weight;
+    @if( $letter-spacing != "" ) {
+        letter-spacing: $letter-spacing;
+    }
+}
+@mixin textRes($font-size: "", $line-height: "", $letter-spacing: "") {
+    font-size: $font-size;
+    line-height: $line-height;
+    @if( $letter-spacing != "" ) {
+        letter-spacing: $letter-spacing;
+    }
+}
+
+@mixin maxWidth($maxWidth: "", $marginBottom: "") {
+    @if( $maxWidth != "" ) {
+        max-width: $maxWidth;
+    }
+    width: 100%;
+    @if( $marginBottom != "" ) {
+        margin: 0 auto $marginBottom;
+    } @else {
+        margin: 0 auto;
+    }
+}

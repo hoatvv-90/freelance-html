@@ -58,7 +58,7 @@ a {
         display: none;
     }
 }
-input {
+input[type="text"], input[type="password"], input[type="email"] {
     width: 100%;
     background: #ffffff;
     border-radius: 0;
@@ -72,4 +72,10 @@ input {
     -moz-appearance: none;
     appearance: none;
     outline: none;
+}
+
+button {
+    border: 0;
+    outline: none;
+    cursor: pointer;
 }

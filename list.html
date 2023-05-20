@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Kagu html</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta property="fb:app_id" content="ー" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="Twitter:card" content="summary_large_image" />
+    <meta property="Twitter:site" content="@dmmolg_mash" />
+    <meta property="Twitter:creator" content="@dmmolg_mash" />
+    <meta property="Twitter:title" content="" />
+    <meta property="Twitter:description" content="" />
+    <meta property="Twitter:image" content="" />
+    <meta property="Twitter:url" content="" />
+    <link rel="icon" type="image/x-icon" href="" />
+    <link rel="icon" type="image/vnd.microsoft.icon" href="" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ckk7pnv',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'ckk7pnv',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+</head>
+
+<body class="page_list">
+    <!-- header -->
+    <header id="header" class="header">
+        <div class="inner">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/images/header_logo.svg" alt="logo" loading="lazy" width="233" height="59">
+                </a>
+            </div>
+            <div class="header_content">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <img src="assets/images/icon_community.svg" alt="公的支援金を探す" loading="lazy" width="19"
+                                        height="19">
+                                </div>
+                                公的支援金を探す
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <img src="assets/images/icon_professional.svg" alt="公的支援金の専門家を探す" loading="lazy"
+                                        width="19" height="19">
+                                </div>
+                                公的支援金の専門家を探す
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <img src="assets/images/icon_user.svg" alt="ログイン" loading="lazy" width="19"
+                                        height="19">
+                                </div>
+                                ログイン
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="thumb">
+                                    <img src="assets/images/icon_login.svg" alt="士業ログイン" loading="lazy" width="19"
+                                        height="19">
+                                </div>
+                                士業ログイン
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="list_favorite">
+                    <a href="#" class="favorite">
+                        <div class="count">3</div>
+                        <div class="thumb">
+                            <img src="assets/images/icon_heart.svg" alt="お気に入り" loading="lazy" width="16" height="18">
+                        </div>
+                        お気に入り
+                    </a>
+                    <a href="#" class="history">
+                        <div class="thumb">
+                            <img src="assets/images/icon_watch.svg" alt="閲覧履歴" loading="lazy" width="16" height="18">
+                        </div>
+                        閲覧履歴
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- /header -->
+
+    <div class="container">
+        <!-- main -->
+        <main id="main">
+            <section class="section" id="search_bar">
+                <div class="inner">
+                    <div class="list_search">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_star_circle.svg" alt="copyright" loading="lazy" width="11" height="20">
+                                    </div>
+                                    受給難易度
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_calendar.svg" alt="copyright" loading="lazy" width="11" height="44">
+                                    </div>
+                                    受給までの期間
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_spot.svg" alt="copyright" loading="lazy" width="11" height="44">
+                                    </div>
+                                    エリア
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_tower.svg" alt="copyright" loading="lazy" width="11" height="44">
+                                    </div>
+                                    事業体
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_note.svg" alt="copyright" loading="lazy" width="1920" height="44">
+                                    </div>
+                                    業種
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_light.svg" alt="copyright" loading="lazy" width="1920" height="44">
+                                    </div>
+                                    利用目的
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                        </ul>
+                        <form action="">
+                            <input type="text" placeholder="フリーワード">
+                            <button class="search">
+                                <div class="thumb">
+                                    <img src="assets/images/icon_search.svg" alt="logo" loading="lazy" width="233" height="59">
+                                </div>
+                                この条件で検索する
+                            </button>
+                            <button class="save">
+                                この検索条件を保存
+                            </button>
+                        </form>
+                    </div>
+                    <div class="include">
+                        <label for="include">
+                            <input type="checkbox" name="include" id="include">
+                            <span>受付が終了したものも含める</span>
+                        </label>
+                        <button class="clear">すべてクリア</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="list_result">
+                <div class="inner">
+                    <div class="breadcum">
+                        <ul>
+                            <li><a href="#">ファクタリング会社の口コミ</a></li>
+                            <li><a href="#">世界一わかりやすい公的支援金</a></li>
+                            <li><span>公的支援金をさがす</span></li>
+                        </ul>
+                    </div>
+                    <div class="list_result_wrapper">
+                        <div class="list_result">
+                            <div class="title">
+                                <h2>おすすめの公的支援金一覧<span>SUPPORT MONEY LIST</span></h2>
+                                <p><strong>1-10</strong>件を表示/2,200件中</p>
+                            </div>
+                            <div class="list_item"></div>
+                        </div>
+                        <aside>
+                            <h2>よく見られている<span>公的支援金</span></h2>
+                            <ul>
+                                <li>
+                                    <div class="receiving_records active">申請<span>受付</span></div>
+                                    <div class="difficult">
+                                        <p>受給難易度：中</p>
+                                        <button><img src="assets/images/icon_heart.svg" alt="love" loading="lazy" width="10" height="10"></button>
+                                    </div>
+                                    <div class="time">
+                                        <div class="spot">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon_spot.svg" alt="copyright" loading="lazy" width="11" height="14">
+                                            </div>
+                                            <p>東京都渋谷区</p>
+                                        </div>
+                                        <div class="calendar">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon_calendar.svg" alt="copyright" loading="lazy" width="11" height="14">
+                                            </div>
+                                            <p>公募期間　2023/1/1〜2024/12/31</p>
+                                        </div>
+                                    </div>
+                                    <h3>大胆な賃上げに取り組むみなさま必見！</h3>
+                                    <h2>【東京都】緊急経営支援特別資金(新型 コロナウイルス感染症対応)</h2>
+                                    <div class="type">
+                                        <ul>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_big_business.svg" alt="大企業" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>大企業</p>
+                                            </li>
+                                            <li class="active">
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_medium_business.svg" alt="中小企業" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>中小企業</p>
+                                            </li>
+                                            <li class="active">
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_personal_business.svg" alt="個人事業主" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>個人事業主</p>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_non_profit.svg" alt="非営利団体" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>非営利団体</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price_support">
+                                        <span>支援金額</span>
+                                        <p>100,000〜1,000,000<strong>円</strong></p>
+                                    </div>
+                                    <div class="txt_desp">
+                                        <p>もっとも低い賃金の引き上げを図る企業の生産性向上に 向けた取り組みを支援します。柔らかい文章柔らかい文 章柔らかい文章柔らかい文章。</p>
+                                    </div>
+                                    <div class="target">
+                                        <p>対象事業：</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">IT関連</a>                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="target">
+                                        <p>利用目的：</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">経営改善・経営強化</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">テストテスト</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="receiving_records">受付<span>終了</span></div>
+                                    <div class="difficult">
+                                        <p>受給難易度：易</p>
+                                        <button><img src="assets/images/icon_heart.svg" alt="love" loading="lazy" width="10" height="10"></button>
+                                    </div>
+                                    <div class="time">
+                                        <div class="spot">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon_spot.svg" alt="copyright" loading="lazy" width="11" height="14">
+                                            </div>
+                                            <p>東京都渋谷区</p>
+                                        </div>
+                                        <div class="calendar">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon_calendar.svg" alt="copyright" loading="lazy" width="11" height="14">
+                                            </div>
+                                            <p>公募期間　2023/1/1〜2024/12/31</p>
+                                        </div>
+                                    </div>
+                                    <h3>大胆な賃上げに取り組むみなさま必見！</h3>
+                                    <h2>【東京都】緊急経営支援特別資金(新型 コロナウイルス感染症対応)</h2>
+                                    <div class="type">
+                                        <ul>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_big_business.svg" alt="大企業" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>大企業</p>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_medium_business.svg" alt="中小企業" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>中小企業</p>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_personal_business.svg" alt="個人事業主" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>個人事業主</p>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_non_profit.svg" alt="非営利団体" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>非営利団体</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price_support">
+                                        <span>支援金額</span>
+                                        <p>100,000〜1,000,000<strong>円</strong></p>
+                                    </div>
+                                    <div class="txt_desp">
+                                        <p>もっとも低い賃金の引き上げを図る企業の生産性向上に 向けた取り組みを支援します。柔らかい文章柔らかい文 章柔らかい文章柔らかい文章。</p>
+                                    </div>
+                                    <div class="target">
+                                        <p>対象事業：</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">IT関連</a>                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="target">
+                                        <p>利用目的：</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">経営改善・経営強化</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">テストテスト</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="receiving_records">受付<span>終了</span></div>
+                                    <div class="difficult">
+                                        <p>受給難易度：易</p>
+                                        <button><img src="assets/images/icon_heart.svg" alt="love" loading="lazy" width="10" height="10"></button>
+                                    </div>
+                                    <div class="time">
+                                        <div class="spot">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon_spot.svg" alt="copyright" loading="lazy" width="11" height="14">
+                                            </div>
+                                            <p>東京都渋谷区</p>
+                                        </div>
+                                        <div class="calendar">
+                                            <div class="thumb">
+                                                <img src="assets/images/icon_calendar.svg" alt="copyright" loading="lazy" width="11" height="14">
+                                            </div>
+                                            <p>公募期間　2023/1/1〜2024/12/31</p>
+                                        </div>
+                                    </div>
+                                    <h3>大胆な賃上げに取り組むみなさま必見！</h3>
+                                    <h2>【東京都】緊急経営支援特別資金(新型 コロナウイルス感染症対応)</h2>
+                                    <div class="type">
+                                        <ul>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_big_business.svg" alt="大企業" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>大企業</p>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_medium_business.svg" alt="中小企業" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>中小企業</p>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_personal_business.svg" alt="個人事業主" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>個人事業主</p>
+                                            </li>
+                                            <li>
+                                                <div class="thumb">
+                                                    <img src="assets/images/icon_non_profit.svg" alt="非営利団体" loading="lazy" width="11" height="14">
+                                                </div>
+                                                <p>非営利団体</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="price_support">
+                                        <span>支援金額</span>
+                                        <p>100,000〜1,000,000<strong>円</strong></p>
+                                    </div>
+                                    <div class="txt_desp">
+                                        <p>もっとも低い賃金の引き上げを図る企業の生産性向上に 向けた取り組みを支援します。柔らかい文章柔らかい文 章柔らかい文章柔らかい文章。</p>
+                                    </div>
+                                    <div class="target">
+                                        <p>対象事業：</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">IT関連</a>                                                
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="target">
+                                        <p>利用目的：</p>
+                                        <ul>
+                                            <li>
+                                                <a href="#">経営改善・経営強化</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">テストテスト</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- /main -->
+    </div>
+    <!-- footer -->
+    <footer id="footer" class="page_list">
+        <div class="inner">
+            <div class="footer_main_wrapper">
+                <div class="footer_main">
+                    <div class="logo">
+                        <a href="#">
+                            <img src="assets/images/footer_logo.svg" alt="logo" loading="lazy" width="233" height="59">
+                        </a>
+                    </div>
+                    <div class="search_list">
+                        <div class="search_diff">
+                            <div class="item">
+                                <h3>受給難易度で探す</h3>
+                                <div class="result">
+                                    <ul>
+                                        <li>
+                                            <a href="#">とても易しい</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">易しい</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">難しい</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>申請から受給までの期間で探す</h3>
+                                <div class="result">
+                                    <ul>
+                                        <li>
+                                            <a href="#">1週間</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">1か月</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">3か月</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">4か月以上</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>事業体から探す</h3>
+                                <div class="result">
+                                    <ul>
+                                        <li>
+                                            <a href="#">大企業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">中小企業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">個人事業主</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">非営利団体</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>利用目的から探す</h3>
+                                <div class="result">
+                                    <ul>
+                                        <li>
+                                            <a href="#">雇用強化</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">経営強化</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">地域活性化</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテスト</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">テストテストテスト</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search_location">
+                            <div class="item">
+                                <h3>受給難易度で探す</h3>
+                                <div class="result">
+                                    <p class="location">北海道・東北</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#">北海道</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">青森県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">岩手県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">宮城県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">秋田県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">山形県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">福島県</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="result">
+                                    <p class="location">関東</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#">茨城県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">栃木県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">群馬県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">埼玉県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">千葉県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">東京都</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">神奈川県</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="result">
+                                    <p class="location">中部</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#">新潟県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">富山県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">石川県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">福井県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">山梨県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">長野県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">岐阜県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">静岡県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">愛知県</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="result">
+                                    <p class="location">近畿</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#">三重県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">滋賀県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">京都府</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">大阪府</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">兵庫県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">奈良県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">和歌山県</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="result">
+                                    <p class="location">中国・四国</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#">鳥取県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">島根県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">岡山県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">広島県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">徳島県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">香川県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">愛媛県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">高知県</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="result">
+                                    <p class="location">九州・沖縄</p>
+                                    <ul>
+                                        <li>
+                                            <a href="#">福岡県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">佐賀県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">長崎県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">熊本県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">大分県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">宮崎県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">鹿児島県</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">沖縄県</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <h3>業種で探す</h3>
+                                <div class="result">
+                                    <ul>
+                                        <li>
+                                            <a href="#">農業・林業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">IT系</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">XXXXXX業</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li>
+                            <a href="#">運営会社</a>
+                        </li>
+                        <li>
+                            <a href="#">利用規約</a>
+                        </li>
+                        <li>
+                            <a href="#">プライバシーポリシー</a>
+                        </li>
+                        <li>
+                            <a href="#">よくある質問</a>
+                        </li>
+                        <li>
+                            <a href="#">お問い合わせ</a>
+                        </li>
+                        <li>
+                            <a href="#">サイトマップ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">©2023 fackomi by netken,inc.</p>
+            <div class="contact">
+                <h2><span>公的支援金の申請でお困りの方</span><span>まずは無料でご相談ください!!</span></h2>
+                <div class="phone">
+                    <div class="thumb">
+                        <img src="assets/images/icon_phone_footer.svg" alt="icon_phone_footer" loading="lazy" width="55"
+                            height="55">
+                    </div>
+                    <div class="phone_txt">
+                        <p>受付時間　10:00-17:00（土日祝休み）</p>
+                        <h3>050-XXXX-XXXX</h3>
+                    </div>
+                </div>
+                <a href="#" class="email">
+                    <div class="thumb">
+                        <img src="assets/images/icon_mail_footer.svg" alt="icon_mail_footer" loading="lazy" width="33"
+                            height="18">
+                    </div>
+                    メールで無料相談
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- /footer -->
+    <script src="assets/libs/js/jquery.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
