@@ -6,16 +6,29 @@
         max-width: 1200px;
         width: 100%;
         margin: 0 auto;
+        @include sp {
+            max-width: 100%;
+        }
     }
     #main {
         max-width: 860px;
         width: 100%;
+        @include sp {
+            max-width: 100%;
+        }
         .section {
             margin-bottom: 45px;
+            @include sp {
+                margin-bottom: get_sp(30);
+                padding: 0 get_sp(16);
+            }
         }
     }
     .item_detail {
         margin-bottom: 45px;
+        @include sp {
+            margin-bottom: get_sp(30);
+        }
     }
     aside {
         max-width: 270px;
@@ -59,35 +72,62 @@
             .recommend_content {
                 background-color: #FFFFFF;
                 padding: 30px;
+                @include sp {
+                    padding: get_sp(20) get_sp(8);
+                }
             }
         }
         .item_content {
             display: flex;
             justify-content: center;
             margin-bottom: 30px;
+            @include sp {
+                margin-bottom: get_sp(20);
+                flex-direction: column;
+            }
             &.item_second {
+                @include sp {
+                    flex-direction: column-reverse;
+                }
                 .txt_desp {
                     padding: 0 16px 0 0;
+                    @include sp {
+                        padding: 0;
+                    }
                 }
             }
             .thumb {
-
+                @include sp {
+                    margin-bottom: get_sp(10);
+                }
             }
             .txt_desp {
                 flex: 1;
                 padding-left: 16px;
                 text-align: left;
                 color: #37434C;
+                @include sp {
+                    padding: 0;
+                }
                 h3 {
                     font-size: 20px;
                     font-weight: bold;
                     line-height: 28px;
                     margin-bottom: 9px;
                     letter-spacing: -1px;
+                    @include sp {
+                        font-size: get_sp(16);
+                        line-height: get_sp(22);
+                        margin-bottom: get_sp(8);
+                    }
                 }
                 p {
                     font-size: 16px;
-                    line-height: 19px;
+                    line-height: 24px;
+                    @include sp {
+                        font-size: get_sp(13);
+                        line-height: get_sp(18);
+                    }
                 }
             }
         }
@@ -97,25 +137,47 @@
             background-color: #EFF7FC;
             padding: 18px 16px 16px;
             margin-bottom: 30px;
+            @include sp {
+                border-radius: get_sp(8);
+                padding: get_sp(21) get_sp(16);
+                margin-bottom: get_sp(20);
+            }
+
             li {
                 margin-bottom: 10px;
+                position: relative;
+                @include sp {
+                    margin-bottom: get_sp(7);
+                }
                 &:last-child {
                     margin-bottom: 0;
+                }
+                &:before {
+                    content: '';
+                    background-color: #FBC500;
+                    border-radius: 50%;
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    left: 0;
+                    top: 4px;
+                    @include sp {
+                        width: get_sp(10);
+                        height: get_sp(10);
+                        top: get_sp(4);
+                    }
                 }
                 p {
                     color: #37434C;
                     font-size: 16px;
                     font-weight: bold;
-                    line-height: 19px;
+                    line-height: 24px;
                     text-align: left;
-                    &:before {
-                        content: '';
-                        background-color: #FBC500;
-                        border-radius: 50%;
-                        width: 10px;
-                        height: 10px;
-                        display: inline-block;
-                        margin-right: 8px;
+                    padding-left: 18px;
+                    @include sp {
+                        padding-left: get_sp(18);
+                        font-size: get_sp(13);
+                        line-height: get_sp(18);
                     }
                     a {
                         color: #4484CE;
@@ -128,14 +190,23 @@
             background-color: #FFFAE3;
             border-radius: 10px;
             position: relative;
+            @include sp {
+                border-radius: get_sp(10);
+            }
             .thumb {
                 position: absolute;
                 bottom: 0;
                 left: 16px;
+                @include sp {
+                    left: get_sp(10);
+                }
             }
             .txt_desp {
                 flex: 1;
                 padding-left: 113px;
+                @include sp {
+                    padding-left: get_sp(103);
+                }
                 p {
                     padding: 18px 15px 16px 0;
                     color: #37434C;
@@ -143,6 +214,11 @@
                     font-weight: bold;
                     line-height: 24px;
                     text-align: left;
+                    @include sp {
+                        padding: get_sp(15) get_sp(19) get_sp(11) 0;
+                        font-size: get_sp(13);
+                        line-height: get_sp(18);
+                    }
                     span {
                         display: block;
                     }
@@ -157,13 +233,17 @@
                 @include bgsetup('../images/icon_tlt_01.png', top center, 100% auto);
                 width: 31px;
                 height: 31px;
+                @include sp {
+                    width: get_sp(24);
+                    height: get_sp(24);
+                }
             }
         }
         .support_content {
             background-color: #FFFFFF;
             padding: 30px;
-            .list_table {
-
+            @include sp {
+                padding: get_sp(20) get_sp(8);
             }
         }
     }
@@ -174,18 +254,31 @@
                 @include bgsetup('../images/icon_tlt_02.png', top center, 100% auto);
                 width: 31px;
                 height: 31px;
+                @include sp {
+                    width: get_sp(28);
+                    height: get_sp(28);
+                }
             }
         }
         .about_content {
             background-color: #FFFFFF;
             padding: 30px;
+            @include sp {
+                padding: get_sp(20) get_sp(8);
+            }
             .list_table {
                 margin-bottom: 30px;
+                @include sp {
+                    margin-bottom: get_sp(20);
+                }
                 ul {
                     li {
                         .txt_desp {
                             p {
                                 font-size: 14px;
+                                @include sp {
+                                    font-size: get_sp(13);
+                                }
                             }
                         }
                     }
@@ -198,6 +291,9 @@
                     background-color: #F4F4F4;
                     padding: 11px 16px 12px;
                     position: relative;
+                    @include sp {
+                        padding: get_sp(13) get_sp(10);
+                    }
                     &:before {
                         content: '';
                         @include bgsetup('../images/arrow_top.svg', top center, 100% auto);
@@ -207,6 +303,16 @@
                         right: 16px;
                         top: 50%;
                         transform: translateY(-50%);
+                        @include sp {
+                            width: get_sp(8);
+                            height: get_sp(7);
+                            right: get_sp(7);
+                        }
+                    }
+                    .thumb {
+                        @include sp {
+                            width: get_sp(31);
+                        }
                     }
                     h3 {
                         flex: 1;
@@ -215,24 +321,43 @@
                         font-weight: bold;
                         line-height: 22px;
                         text-align: left;
+                        @include sp {
+                            font-size: get_sp(14);
+                            line-height: get_sp(20);
+                            padding-left: get_sp(9);
+                        }
                     }
                 }
                 .txt_desp {
                     padding: 18px 16px 16px 50px;
                     border-bottom: 1px solid #D9D9D9;;
+                    @include sp {
+                        padding: get_sp(11) get_sp(20) get_sp(10) get_sp(50);
+                    }
                     ul {
                         margin-bottom: 8px;
+                        @include sp {
+                            margin-bottom: get_sp(8);
+                        }
                     }
                     li {
                         font-size: 16px;
                         line-height: 26px;
                         text-align: left;
+                        @include sp {
+                            font-size: get_sp(13);
+                            line-height: get_sp(20);
+                        }
                     }
                     p {
                         color: #919191;
                         font-size: 14px;
                         line-height: 24px;
                         text-align: left;
+                        @include sp {
+                            font-size: get_sp(12);
+                            line-height: get_sp(19);
+                        }
                     }
                 }
             }
@@ -245,11 +370,18 @@
                 @include bgsetup('../images/icon_tlt_03.png', top center, contain);
                 width: 35px;
                 height: 30px;
+                @include sp {
+                    width: get_sp(28);
+                    height: get_sp(24);
+                }
             }
         }
         .documents_content {
             background-color: #FFFFFF;
-            padding: 30px 30px 30px;
+            padding: 30px;
+            @include sp {
+                padding: get_sp(20) get_sp(8);
+            }
             .list_table {
                 ul {
                     li {
@@ -264,6 +396,10 @@
                             .txt_note {
                                 font-size: 14px;
                                 color: #919191;
+                                @include sp {
+                                    font-size: get_sp(12);
+                                    line-height: get_sp(19);
+                                }
                             }
                         }
                     }
@@ -278,11 +414,18 @@
                 @include bgsetup('../images/icon_tlt_04.png', top center, contain);
                 width: 23px;
                 height: 31px;
+                @include sp {
+                    width: get_sp(18);
+                    height: get_sp(24);
+                }
             }
         }
         .step_content {
             background-color: #FFFFFF;
             padding: 41px 46px 30px;
+            @include sp {
+                padding: get_sp(20) get_sp(18);
+            }
         }
         .list_item {
             li {
@@ -291,6 +434,10 @@
                 border-bottom: 1px solid #D6D9DA;
                 margin-bottom: 22px;
                 position: relative;
+                @include sp {
+                    padding-bottom: get_sp(10);
+                    margin-bottom: get_sp(10);
+                }
                 &:after {
                     content: '';
                     @include bgsetup('../images/arrow.svg', top center, contain);
@@ -299,6 +446,12 @@
                     position: absolute;
                     bottom: -10px;
                     left: 20px;
+                    @include sp {
+                        width: get_sp(26);
+                        height: get_sp(10);
+                        bottom: get_sp(-10);
+                        left: get_sp(20);
+                    }
                 }
                 &:last-child {
                     &:after {
@@ -317,12 +470,24 @@
                     align-items: center;
                     justify-content: center;
                     margin-left: 16px;
+                    @include sp {
+                        width: get_sp(32);
+                        height: get_sp(32);
+                        margin-left: get_sp(8);
+                    }
                     span {
                         font-size: 9px;
                         display: block;
+                        text-transform: uppercase;
+                        @include sp {
+                            font-size: 8px;
+                        }
                     }
                     h4 {
                         font-size: 18px;
+                        @include sp {
+                            font-size: get_sp(16);
+                        }
                     }
                 }
                 .txt_desp {
@@ -335,10 +500,18 @@
                         line-height: 22px;
                         font-weight: bold;
                         margin-bottom: 8px;
+                        @include sp {
+                            font-size: get_sp(16);
+                            line-height: get_sp(24);
+                        }
                     }
                     p {
                         font-size: 14px;
                         line-height: 21px;
+                        @include sp {
+                            font-size: get_sp(13);
+                            line-height: get_sp(20);
+                        }
                     }
                 }
             }
@@ -352,11 +525,18 @@
                 @include bgsetup('../images/icon_tlt_05.png', top center, contain);
                 width: 26px;
                 height: 31px;
+                @include sp {
+                    width: get_sp(22);
+                    height: get_sp(26);
+                }
             }
         }
         .desk_content {
             background-color: #FFFFFF;
             padding: 30px;
+            @include sp {
+                padding: get_sp(20) get_sp(8);
+            }
         }
         .list_table {
             ul {
@@ -378,43 +558,75 @@
                 @include bgsetup('../images/icon_tlt_06.png', top center, contain);
                 width: 35px;
                 height: 30px;
+                @include sp {
+                    width: get_sp(27);
+                    height: get_sp(23);
+                }
             }
         }
         .sent_support_content {
             background-color: #FFFFFF;
-            padding: 30px 30px 30px;
+            padding: 30px;
+            @include sp {
+                padding: get_sp(20) get_sp(8);
+            }
         }
         .parameter {
             display: flex;
             flex: 1;
             margin-bottom: 72px;
+            @include sp {
+                flex-direction: column;
+                margin-bottom: get_sp(42);
+            }
             .box_txt {
                 border: 1px solid #F9CE00;
                 border-radius: 10px;
                 text-align: left;
                 padding: 29px 27px;
+                @include sp {
+                    padding: get_sp(21) get_sp(20) get_sp(21) get_sp(95);
+                    border-radius: get_sp(10);
+                    width: 100%;
+                    margin-bottom: get_sp(20);
+                }
                 span {
                     color: #919191;
                     font-size: 12px;
                     line-height: 17px;
                     margin-bottom: 5px;
                     display: block;
+                    @include sp {
+                        font-size: get_sp(11);
+                        line-height: get_sp(16);
+                        margin-bottom: get_sp(5);
+                    }
                 }
                 h3 {
                     color: #37434C;
                     font-size: 20px;
                     line-height: 28px;
                     font-weight: bold;
+                    @include sp {
+                        font-size: get_sp(16);
+                        line-height: get_sp(22);
+                    }
                 }
             }
             .thumb {
                 padding-left: 20px;
+                @include sp {
+                    padding: 0;
+                }
             }
         }
         .txt_review {
             position: relative;
             text-align: left;
             margin-bottom: 30.5px;
+            @include sp {
+                margin-bottom: get_sp(27);
+            }
             h3 {
                 color: #BAD7EB;
                 font-size: 71px;
@@ -425,6 +637,11 @@
                 bottom: -5px;
                 z-index: 1;
                 text-transform: uppercase;
+                @include sp {
+                    font-size: get_sp(34);
+                    line-height: get_sp(43);
+                    bottom: get_sp(32);
+                }
             }
             p {
                 font-size: 14px;
@@ -433,10 +650,23 @@
                 border-bottom: 1px solid #707070;
                 position: relative;
                 z-index: 9;
+                @include sp {
+                    font-size: get_sp(14);
+                    line-height: get_sp(21);
+                    padding-bottom: get_sp(7);
+                }
+                span {
+                    @include sp {
+                        display: block;
+                    }
+                }
             }
         }
         .btn_login {
             margin-bottom: 31.5px;
+            @include sp {
+                margin-bottom: get_sp(22);
+            }
             a {
                 color: #FFFFFF;
                 font-size: 18px;
@@ -446,6 +676,12 @@
                 background-color: #F19F4D;
                 border-radius: 10px;
                 display: inline-block;
+                @include sp {
+                    font-size: get_sp(16);
+                    line-height: get_sp(22);
+                    border-radius: get_sp(10);
+                    padding: get_sp(17) get_sp(42) get_sp(15);
+                }
                 &:before {
                     content: '';
                     @include bgsetup('../images/icon_tlt_06.png', top center, 100% auto);
@@ -454,25 +690,43 @@
                     display: inline-block;
                     margin-right: 10px;
                     vertical-align: bottom;
+                    @include sp {
+                        width: get_sp(20);
+                        height: get_sp(17);
+                        margin-right: get_sp(8);
+                    }
                 }
             }
         }
         .info_about {
             text-align: right;
+            @include sp {
+                margin-bottom: get_sp(12);
+            }
             a {
                 display: inline-block;
                 color: #4484CE;
                 font-size: 14px;
                 line-height: 20px;
                 text-decoration: underline;
+                @include sp {
+                    font-size: get_sp(13);
+                    line-height: get_sp(18);
+                }
             }
         }
         .list_item {
             ul {
                 margin-bottom: 30px;
+                @include sp {
+                    margin-bottom: get_sp(20.5);
+                }
             }
             li {
                 margin-bottom: 16px;
+                @include sp {
+                    margin-bottom: get_sp(10);
+                }
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -480,13 +734,19 @@
             .item_content {
                 display: flex;
                 .avatar {
-                    padding-right: 18px;
+                    @include sp {
+                        width: get_sp(32);
+                        height: get_sp(41);
+                    }
                     span {
                         display: block;
                         color: #4484CE;
                         font-size: 12px;
                         text-align: center;
                         line-height: 17px;
+                        @include sp {
+                            display: none;
+                        }
                     }
                 }
                 .content {
@@ -495,6 +755,12 @@
                     position: relative;
                     padding: 15px 16px 22.5px;
                     flex: 1;
+                    margin-left: 18px;
+                    @include sp {
+                        margin-left: get_sp(23);
+                        border-radius: get_sp(10);
+                        padding: get_sp(10) get_sp(8);
+                    }
                     &:before {
                         content: '';
                         @include bgsetup('../images/arrow_comment.svg', top center, 100% auto);
@@ -503,11 +769,20 @@
                         position: absolute;
                         left: -19px;
                         top: 16px;
+                        @include sp {
+                            width: get_sp(13);
+                            height: get_sp(31);
+                            left: get_sp(-13);
+                            top: get_sp(16);
+                        }
                     }
                     .info_item {
                         display: flex;
                         justify-content: space-between;
                         margin-bottom: 12px;
+                        @include sp {
+                            margin-bottom: get_sp(9);
+                        }
                         span {
                             background-color: #FBC500;
                             border-radius: 4px;
@@ -515,6 +790,12 @@
                             line-height: 20px;
                             padding: 3px 18px;
                             color: #FFFFFF;
+                            @include sp {
+                                font-size: get_sp(10);
+                                line-height: get_sp(14);
+                                padding: get_sp(5) get_sp(7) get_sp(3);
+                                border-radius: get_sp(4);
+                            }
                         }
                         a {
                             display: block;
@@ -525,6 +806,11 @@
                             font-size: 10px;
                             font-weight: bold;
                             line-height: 14px;
+                            @include sp {
+                                font-size: get_sp(10);
+                                line-height: get_sp(14);
+                                padding: get_sp(5) get_sp(9) get_sp(3);
+                            }
                             &:before {
                                 content: '';
                                 @include bgsetup('../images/copy_url.png', top center, 100% auto);
@@ -533,6 +819,11 @@
                                 display: inline-block;
                                 vertical-align: middle;
                                 margin-right: 4px;
+                                @include sp {
+                                    width: get_sp(10);
+                                    line-height: get_sp(11);
+                                    margin-right: get_sp(4);
+                                }
                             }
                         }
                     }
@@ -543,13 +834,23 @@
                         text-align: left;
                         padding-bottom: 8px;
                         margin-bottom: 8px;
-                        border-bottom: 1px solid #BAD7EB;;
+                        border-bottom: 1px solid #BAD7EB;
+                        @include sp {
+                            font-size: get_sp(14);
+                            line-height: get_sp(20);
+                            padding-bottom: get_sp(7);
+                            margin-bottom: get_sp(9);
+                        }
                     }
                     .txt_desp {
                         p {
                             font-size: 16px;
                             line-height: 24px;
                             text-align: left;
+                            @include sp {
+                                font-size: get_sp(13);
+                                line-height: get_sp(20);
+                            }
                         }
                     }
                 }
@@ -564,6 +865,12 @@
                     border-radius: 10px;
                     padding: 9px 22px;
                     display: inline-block;
+                    @include sp {
+                        font-size: get_sp(16);
+                        line-height: get_sp(22);
+                        padding: get_sp(12) get_sp(29) get_sp(10);
+                        border-radius: get_sp(10);
+                    }
                 }
             }
         }
@@ -576,18 +883,32 @@
                 @include bgsetup('../images/icon_tlt_07.png', top center, contain);
                 width: 31px;
                 height: 30px;
+                @include sp {
+                    width: get_sp(27);
+                    height: get_sp(26);
+                }
             }
         }
         .question_content {
             background-color: #FFFFFF;
             padding: 32px 30px 30px;
             position: relative;
+            @include sp {
+                padding: get_sp(20) get_sp(8);
+            }
             p {
                 font-size: 16px;
                 font-weight: bold;
                 text-align: left;
                 line-height: 22px;
                 margin-bottom: 28px;
+                @include sp {
+                    font-size: get_sp(14);
+                    line-height: get_sp(20);
+                    margin-bottom: get_sp(18);
+                    text-align: center;
+                    padding: 0 get_sp(60) 0 get_sp(53);
+                }
             }
             .box_parameter {
                 .thumb {
@@ -597,11 +918,23 @@
                     position: absolute;
                     bottom: -1px;
                     left: -40px;
+                    @include sp {
+                        bottom: initial;
+                        top: get_sp(-10);
+                        left: get_sp(-10);
+                        width: get_sp(58);
+                    }
                 }
                 .position_persion_02 {
                     position: absolute;
                     bottom: -1px;
                     right: -10px;
+                    @include sp {
+                        width: get_sp(52);
+                        bottom: initial;
+                        top: get_sp(-10);
+                        right: 0;
+                    }
                 }
             }
         }
@@ -614,11 +947,18 @@
                 @include bgsetup('../images/icon_faq.png', top center, contain);
                 width: 33px;
                 height: 31px;
+                @include sp {
+                    width: get_sp(27);
+                    height: get_sp(26);
+                }
             }
         }
         .faq_list {
             padding: 30px;
             background-color: #FFFFFF;
+            @include sp {
+                padding: get_sp(20) get_sp(8);
+            }
             .question {
                 span {
                     display: flex;
@@ -632,12 +972,21 @@
                     color: #FFFFFF;
                     font-size: 24px;
                     font-family: $font-din;
+                    @include sp {
+                        width: get_sp(31);
+                        height: get_sp(31);
+                        font-size: get_sp(22);
+                    }
                 }
                 h3 {
                     text-align: left;
                     flex: 1;
                     font-size: 16px;
                     line-height: 22px;
+                    @include sp {
+                        font-size: get_sp(13);
+                        line-height: get_sp(18);
+                    }
 
                 }
             }
@@ -647,6 +996,9 @@
     #contact {
         .inner {
             margin-bottom: 109px;
+            @include sp {
+                margin-bottom: get_sp(30);
+            }
         }
     }
 }

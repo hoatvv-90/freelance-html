@@ -59,7 +59,7 @@
     @return $rate * $fsize * 1vw;
 }
 
-@function get_sp($fsize, $viewport: 390) {
+@function get_sp($fsize, $viewport: 430) {
     $rate: 100 / $viewport;
     @return $rate * $fsize * 1vw;
 }
