@@ -217,6 +217,7 @@ a {
                     color: #4484CE;
                     font-family: $font-din;
                     line-height: 17px;
+                    font-size: 19px;
                     text-decoration: underline;
                     @include sp {
                         font-size: get_sp(16);
