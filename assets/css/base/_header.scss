@@ -2,5 +2,100 @@
 	header
 */
 #header {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 3px 6px #00000029;
+	.inner {
+		max-width: 1230px;
+		width: 100%;
+		margin: 0 auto 17px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 29px 15px;
+	}
+	.logo {
+		width: 233px;
+	}
+	nav {
+		margin-right: 30px;
+		a {
+			@include text(16px, 20px, #37434C, 400);
+			display: flex;
+			align-items: center;
+			.thumb {
+				width: 19px;
+				margin-right: 4px;
+			}
+			img {
+				display: block;
+			}
+		}
+		ul {
+			display: flex;
+		}
+		li {
+			margin-right: 20px;
+			&:first-child {
+				a {
+					.thumb {
+						width: 18px;
+					}
+				}
+			}
+			&:last-child {
+				margin-right: 0;
+				a {
+					.thumb {
+						width: 20px;
+					}
+				}
+			}
+		}
+	}
+	.header_content {
+		display: flex;
+		align-items: center;
+	}
+	.list_favorite {
+		display: flex;
+		align-items: center;
+		a {
+			@include text(12px, 17px, #fff, bold);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			border-radius: 8px;
+		}
+	}
+	.favorite {
+		margin-right: 10px;
+		position: relative;
+		background-color: #FBC500;
+		padding: 9px 10px 6px;
+		.thumb {
+			width: 16px;
+			margin-bottom: 4px;
+		}
+		.count {
+			position: absolute;
+			font-family: $font-din;
+			@include text(12px, 15px, #37434C, 500);
+			padding: 1px 5px 1px 6px;
+			border-radius: 10px;
+			background: #FFFFFF;
+			border: 1px solid #FBCE00;
+			top: 0;
+			right: -3px;
 
+		}
+	}
+	.history {
+		background-color: #4484CE;
+		padding: 7px 10px 6px;
+		.thumb {
+			width: 19px;
+			margin-bottom: 3px;
+		}
+	}
 }

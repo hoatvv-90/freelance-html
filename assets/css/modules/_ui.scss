@@ -6,6 +6,37 @@ a {
         outline: none;
     }
 }
+/*
+    breadcum
+*/
+.breadcum {
+    text-align: left;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 15px;
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        margin-right: 12px;
+        &::after {
+            content: '>';
+            display: block;
+        }
+        &:last-child {
+            &::after {
+                display: none;
+            }
+        }
+    }
+    a, span {
+        @include text(11px, 13px, #37434C, 400);
+        margin-right: 12px;
+    }
+}
 
 /*
     Item Detail
