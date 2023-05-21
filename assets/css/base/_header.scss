@@ -4,6 +4,15 @@
 #header {
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	box-shadow: 0px 3px 6px #00000029;
+	@include sp {
+		box-shadow: 0px 1px 4px #00000029;
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 999;
+		overscroll-behavior: none;
+	}
 	.inner {
 		max-width: 1230px;
 		width: 100%;
@@ -12,29 +21,130 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 29px 15px;
+		@include sp {
+			max-width: 100%;
+			padding: get_sp(13) get_sp(16);
+		}
 	}
 	.logo {
 		width: 233px;
+		@include sp {
+			width: get_sp(110);
+		}
 	}
 	nav {
 		margin-right: 30px;
+		@include sp {
+			position: fixed;
+			transform: translateX(200%);
+			padding: get_sp(39) get_sp(16);
+			background-color: #DBE5F1;
+			transition: transform 0.5s linear;
+			top: get_sp(67);
+			left: 0;
+			width: 100%;
+			z-index: 99;
+			bottom: 0;
+		}
+		&.active {
+			transform: translateX(0);
+			overflow-y: scroll;
+		}
 		a {
 			@include text(16px, 20px, #37434C, 400);
 			display: flex;
 			align-items: center;
+			@include sp {
+				justify-content: space-between;
+				@include textRes(get_sp(16), get_sp(22));
+				padding: get_sp(22) get_sp(8) get_sp(20) get_sp(9);
+				border-bottom: 1px solid #FFFFFF;
+			}
 			.thumb {
 				width: 19px;
 				margin-right: 4px;
+				@include sp {
+					display: none;
+				}
 			}
 			img {
 				display: block;
+			}
+			&::after {
+				@include sp {
+					content: '';
+					width: get_sp(10);
+					height: get_sp(10);
+					@include bgsetup('../images/icon_arrow_right.svg', center, contain);
+					display: block;
+				}
+			}
+		}
+		.search_sp {
+			display: none;
+			@include sp {
+				display: block;
+				padding-bottom: get_sp(20);
+				border-bottom: 1px solid #FFFFFF;
+			}
+			form {
+				display: flex;
+				@include sp {
+					border-radius: get_sp(8);
+					overflow: hidden;
+				}
+			}
+			input {
+				@include sp {
+					border: 0;
+					@include text(get_sp(13), get_sp(18), #37434C, 400);
+					padding: get_sp(13) get_sp(16) get_sp(12);
+					background-color: #fff;
+					flex: 1;
+				}
+				&::placeholder {
+					color: #929292;
+				}
+			}
+			button {
+				@include sp {
+					display: flex;
+					align-items: center;
+					padding: get_sp(14) get_sp(8) get_sp(12);
+					@include text(get_sp(12), get_sp(17), #FFFFFF, bold);
+					background-color: #4484CE;
+				}
+				.thumb {
+					@include sp {
+						width: get_sp(13);
+						margin-right: get_sp(4);
+					}
+				}
+				img {
+					display: block;
+					width: 100%;
+				}
 			}
 		}
 		ul {
 			display: flex;
 		}
+		.header_pc {
+			@include sp {
+				display: none;
+			}
+		}
+		.header_sp {
+			display: none;
+			@include sp {
+				display: block;
+			}
+		}
 		li {
 			margin-right: 20px;
+			@include sp {
+				margin-right: 0;
+			}
 			&:first-child {
 				a {
 					.thumb {
@@ -44,6 +154,9 @@
 			}
 			&:last-child {
 				margin-right: 0;
+				@include sp {
+					margin-bottom: get_sp(100);
+				}
 				a {
 					.thumb {
 						width: 20px;
@@ -60,22 +173,35 @@
 		display: flex;
 		align-items: center;
 		a {
-			@include text(12px, 17px, #fff, bold);
+			@include text(12px, 15px, #fff, bold);
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			flex-direction: column;
 			border-radius: 8px;
+			align-self: stretch;
+			@include sp {
+				border-radius: get_sp(8);
+				@include textRes(get_sp(10), get_sp(14));
+			}
 		}
 	}
 	.favorite {
 		margin-right: 10px;
 		position: relative;
 		background-color: #FBC500;
-		padding: 9px 10px 6px;
+		padding: 9px 10px 5px;
+		@include sp {
+			margin-right: get_sp(7);
+			padding: get_sp(7) get_sp(5) get_sp(5);
+		}
 		.thumb {
 			width: 16px;
 			margin-bottom: 4px;
+			@include sp {
+				width: get_sp(12);
+				margin-bottom: get_sp(1);
+			}
 		}
 		.count {
 			position: absolute;
@@ -87,15 +213,62 @@
 			border: 1px solid #FBCE00;
 			top: 0;
 			right: -3px;
-
+			@include sp {
+				@include textRes(8px, 11px);
+				padding: get_sp(2) get_sp(4) get_sp(1);
+				right: get_sp(-2);
+			}
 		}
 	}
 	.history {
 		background-color: #4484CE;
 		padding: 7px 10px 6px;
+		@include sp {
+			padding: get_sp(5) get_sp(6) get_sp(5);
+			margin-right: get_sp(13);
+		}
 		.thumb {
 			width: 19px;
 			margin-bottom: 3px;
+			@include sp {
+				width: get_sp(13);
+				margin-bottom: get_sp(1);
+			}
+		}
+	}
+	.hamburger {
+		display: none;
+		@include sp {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: column;
+			width: get_sp(17);
+			height: get_sp(14);
+		}
+		span, &::before, &::after {
+			border: 1px solid #707070;
+			width: 100%;
+			display: block;
+			flex-shrink: 0;
+			transition: transform 0.2s linear;
+			border-left: 0;
+			border-right: 0;
+			transform-origin: left;
+		}
+		&::before, &::after {
+			content: '';
+		}
+		&.active {
+			span {
+				display: none;
+			}
+			&::before {
+				transform: rotate(45deg);
+			}
+			&::after {
+				transform: rotate(-45deg);
+			}
 		}
 	}
 }

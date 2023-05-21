@@ -6,13 +6,80 @@
         _windowHeight = window.innerHeight,
         _spmode = 768,
         _speed = 1000;
-
+    let distance = 0;
     if (_width <= _spmode) {
     }
     // loading after
     window.onload = function () {
         scrollAnimation('.list_scroll a');
+        $('#search_bar .list_search a').on('click', function(e){
+            e.preventDefault();
+            const idModal = $(this).attr('href');
+            $('.modal_wrapper.show').removeClass('show');
+            $(idModal).addClass('show');
+            $('#modal').addClass('show');
+            $('.page_list').addClass('active');
+            $('#modal').css('top', distance);
+        });
 
+        //handle modal
+
+        $('#modal .close').on('click', function() {
+            $('#modal').removeClass('show');
+            $('.page_list').removeClass('active');
+        });
+
+        $('.main_tabs a').on('click', function(e){
+            e.preventDefault();
+            $('.main_tabs a.active').removeClass('active')
+            const idTabActive = $(this).attr('href');
+            $(this).addClass('active');
+            $('.location_tabs .sub_tabs.active').removeClass('active');
+            $(`.location_tabs ${idTabActive}`).addClass('active');
+        });
+
+        $('#modal').on('click', '.label_all',function(){
+            const modalWrapper = $(this).parents('.modal_wrapper');
+            const listInput = modalWrapper.find('input[type="checkbox"]');
+            const inputCheckAll = $(this).children('#all').attr('checked');
+            listInput.attr('checked', !inputCheckAll);
+        });
+
+        $('#modal').on('click', '.clear', function(){
+            const modalWrapper = $(this).parents('.modal_wrapper');
+            const listInput = modalWrapper.find('input[type="checkbox"]:checked');
+            listInput.attr('checked', false);
+        })
+
+        $('.sub_tabs a').on('click', function(e){
+            e.preventDefault();
+            $('.sub_tabs a.active').removeClass('active')
+            const idTabActive = $(this).attr('href');
+            $(this).addClass('active');
+            $('.list_choice').show();
+            $('.list_choice ul.active').removeClass('active');
+            $(`.list_choice ${idTabActive}`).addClass('active');
+        })
+
+        $(document).mouseup(function(e) {
+            var container = $("#modal .modal_wrapper");
+            if (!container.is(e.target) && container.has(e.target).length === 0) 
+            {
+                $('#modal').removeClass('show');
+                $('.page_list').removeClass('active');
+            }
+        });
+
+        $('#search_bar .conditional').on('click', function() {
+            $(this).toggleClass('active');
+            $('#search_bar .list_search').slideToggle('active');
+        })
+
+        $('header .hamburger').on('click', function(){
+            $(this).toggleClass('active');
+            $('.header_content nav').toggleClass('active');
+            $('body').toggleClass('hidden');
+        })
     };
 
     function activeTab(obj) {
@@ -73,6 +140,9 @@
     };
 
     //scroll after
-    window.onscroll = function () {};
+    window.onscroll = function () {
+        distance = this.scrollY;
+    };
 
 })(jQuery);
+
