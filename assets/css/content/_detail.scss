@@ -934,8 +934,123 @@
                 }
             }
             .box_parameter {
-                .thumb {
+                .box_parameter_content {
+                    width: 605px;
                     margin: 0 auto;
+                    @include sp {
+                        width: 100%;
+                    }
+                }
+                .item_paramete {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    @include sp {
+                        margin-bottom: get_sp(8);
+                    }
+                    &:nth-child(01) {
+                        .txt_active {
+                            width: 212px;
+                            @include sp {
+                                width: get_sp(148);
+                            }
+                        }
+                    }
+                    &:nth-child(02) {
+                        .txt_active {
+                            width: 307px;
+                            @include sp {
+                                width: get_sp(183);
+                            }
+                        }
+                    }
+                    &:nth-child(03) {
+                        .txt_active {
+                            width: 227px;
+                            @include sp {
+                                width: get_sp(146);
+                            }
+                        }
+                    }
+                    &:nth-child(04) {
+                        .txt_active {
+                            width: 250px;
+                            @include sp {
+                                width: get_sp(141);
+                            }
+                        }
+                        .txt_disable {
+                            @include sp {
+                                padding-right: get_sp(20);
+                            }
+                        }
+                    }
+                    .icon_process {
+                        width: 26px;
+                        height: 26px;
+                        border-radius: 50%;
+                        background-color: #FBC500;
+                        display: flex;
+                        align-items: center;
+                        @include sp {
+                            width: get_sp(18);
+                            height: get_sp(18);
+                        }
+                        &:last-child {
+                            background-color: #D6D9DA;
+                        }
+                        .icon_ {
+                            @include bgsetup('../images/+.png', top center, 100% auto);
+                            width: 15px;
+                            height: 15px;
+                            display: block;
+                            margin: 0 auto;
+                            @include sp {
+                                width: get_sp(11);
+                                height: get_sp(11);
+                            }
+                        }
+
+                    }
+                    span {
+                        font-size: 14px;
+                        font-weight: bold;
+                        padding: 15px 6px 14px 10px;
+                        @include sp {
+                            font-size: get_sp(10);
+                            padding: get_sp(15) get_sp(6) get_sp(14) get_sp(10);
+                            line-height: get_sp(12);
+                        }
+                        b {
+                            @include sp {
+                                display: block;
+                            }
+                        }
+                        small {
+                            font-size: 10px;
+                            @include sp {
+                                font-size: 8px;
+                            }
+                        }
+                    }
+                    .txt_active {
+                        background-color: #FBC500;
+                        text-align: left;
+                        margin-left: 14px;
+                        @include sp {
+                            margin-left: get_sp(6);
+                        }
+                    }
+                    .txt_disable {
+                        background-color: #F4F4F4;
+                        text-align: right;
+                        flex: 1;
+                        margin-right: 14px;
+                        @include sp {
+                            margin-right: get_sp(6);
+                        }
+                    }
                 }
                 .position_persion_01 {
                     position: absolute;
@@ -1025,6 +1140,171 @@
             margin-bottom: 109px;
             @include sp {
                 margin-bottom: get_sp(30);
+            }
+        }
+        .box_contact {
+            background-color: #EFF7FC;
+            padding: 32px 20px 18px;
+            position: relative;
+            @include sp {
+                padding: get_sp(19) get_sp(8) get_sp(10);
+            }
+            .banner_img {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                @include sp {
+                    bottom: get_sp(98);
+                }
+            }
+            .bg_icon {
+                position: absolute;
+                top: 36px;
+                right: 14px;
+                @include sp {
+                    display: none;
+                }
+            }
+            .box_content {
+                text-align: center;
+                margin: 0 19px 9px 275px;
+                @include sp {
+                    margin: 0 0 get_sp(10) get_sp(142);
+                }
+                .thumb {
+                    margin-bottom: 4px;
+                }
+                .txt_note_banner {
+                    text-align: left;
+                }
+                span {
+                    font-size: 31px;
+                    line-height: 44px;
+                    font-weight: bold;
+                    position: relative;
+                    margin-bottom: 11px;
+                    z-index: 9;
+                    display: inline;
+                    @include bgsetup('../images/bg_border_gray.png', bottom, contain);
+                    @include sp {
+                        font-size: get_sp(24);
+                        line-height: get_sp(29);
+                        margin-bottom: get_sp(10);
+                    }
+                }
+                p {
+                    color: #4484CE;
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+            .info_contact {
+                background-color: #FFFFFF;
+                border-radius: 10px;
+                padding: 15px 20px;
+                display: flex;
+                justify-content: flex-end;
+                position: relative;
+                @include sp {
+                    padding: get_sp(10) get_sp(8) get_sp(30.5);
+                    border-radius: get_sp(10);
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                a {
+                    color: #FFFFFF;
+                    font-size: 17px;
+                    line-height: 24px;
+                    display: block;
+                    border-radius: 10px;
+                    padding: 20px 38px;
+                    @include sp {
+                        font-size: get_sp(16);
+                        line-height: get_sp(22);
+                        padding: get_sp(14) get_sp(8);
+                        border-radius: get_sp(10);
+                    }
+                }
+                .txt_position {
+                    @include sp {
+                        font-size: get_sp(10);
+                        line-height: get_sp(14);
+                    }
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    bottom: get_sp(11);
+
+                }
+                .info_phone {
+                    display: flex;
+                    align-items: center;
+                    .thumb {
+                        @include sp {
+                            width: get_sp(20);
+                        }
+                    }
+                    .txt_desp {
+                        flex: 1;
+                        margin-left: 20px;
+                        text-align: left;
+                        @include sp {
+                            margin: 0;
+                        }
+                        span {
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                        h4 {
+                            font-size: 35px;
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            line-height: 54px;
+                            color: #F19F4D;
+                            @include sp {
+                                font-size: get_sp(16);
+                                line-height: get_sp(22);
+                            }
+                        }
+                    }
+                    a {
+                        background-color: #F19F4D;
+                        &:before {
+                            @include sp {
+                                content: '';
+                                @include bgsetup('../images/icon_phone_footer_sp.svg', top center, contain);
+                                width: get_sp(20);
+                                height: get_sp(20);
+                                margin-right: get_sp(4);
+                                vertical-align: middle;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+                .info_mail {
+                    margin-left: 20px;
+                    @include sp {
+                        margin-left: get_sp(8);
+                    }
+                    a {
+                        background-color: #4484CE;
+                        &:before {
+                            content: '';
+                            @include bgsetup('../images/icon_contact.svg', top center, contain);
+                            width: 33px;
+                            height: 18px;
+                            display: inline-block;
+                            margin-right: 8px;
+                            vertical-align: middle;
+                            @include sp {
+                                width: get_sp(27);
+                                height: get_sp(14);
+                                margin-right: get_sp(4);
+                            }
+                        }
+                    }
+                }
             }
         }
     }
