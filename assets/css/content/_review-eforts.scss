@@ -1,0 +1,178 @@
+.review_efforts {
+    #main {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto 115px;
+        @include sp {
+            margin-bottom: get_sp(80);
+            padding: 0 get_sp(16);
+        }
+    }
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        padding-top: 100px;
+        @include sp {
+            padding-top: get_sp(60);
+        }
+        h2 {
+            @include text(22px, 30px, #00192A,400);
+            position: relative;
+            flex: 1;
+            z-index: 1;
+            @include sp {
+                @include text(get_sp(16), get_sp(22), #00192A,400);
+            }
+            span {
+                position: absolute;
+                font-family: $font-futura;
+                @include text(71px, 91px, #BAD7EB,300);
+                bottom: -8px;
+                left: -7px;
+                width: 100%;
+                z-index: -1;
+                @include sp {
+                    @include text(get_sp(34), get_sp(43), #BAD7EB,300);
+                    @include sp {
+                        bottom: 0;
+                        left: get_sp(-7);
+                    }
+                }
+            }
+        }
+    }
+    #content {
+        p {
+            font-size: 16px;
+            line-height: 24px;
+            text-align: left;
+            @include sp {
+                font-size: get_sp(13);
+                line-height: get_sp(18);
+            }
+            &.txt_note {
+                margin-bottom: 30px;
+                @include sp {
+                    margin-bottom: get_sp(23);
+                }
+            }
+        }
+        .tabs_list {
+            .tab_nav {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    @include sp {
+                        width: 50%;
+                    }
+                    &.active_tab {
+                        a {
+                            background-color: #4484CE;
+                            color: #FFFFFF;
+                        }
+                    }
+                    a {
+                        font-size: 22px;
+                        line-height: 30px;
+                        font-weight: bold;
+                        color: #37434C;
+                        padding: 24px 0;
+                        width: 319px;
+                        background-color: #E2E2E2;
+                        border-radius: 10px 10px 0 0;
+                        display: block;
+                        @include sp {
+                            border-radius: get_sp(10) get_sp(10) 0 0;
+                            padding: get_sp(12) 0;
+                            font-size: get_sp(12);
+                            line-height: get_sp(17);
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .tabs_content {
+                background-color: #E8F3FF;
+                padding: 40px 200px 30px;
+                @include sp {
+                    padding: get_sp(16) get_sp(8);
+                }
+                .content {
+                    text-align: left;
+                    > p {
+                        margin-bottom: 22px;
+                        @include sp {
+                            margin-bottom: get_sp(12);
+                        }
+                        span {
+                            @include sp {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+                .item_content {
+                    margin-bottom: 22px;
+                    @include sp {
+                        margin-bottom: get_sp(18);
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    h3 {
+                        font-size: 18px;
+                        line-height: 25px;
+                        font-weight: bold;
+                        margin-bottom: 9px;
+                        @include sp {
+                            font-size: get_sp(16);
+                            line-height: get_sp(22);
+                            margin-bottom: get_sp(9);
+                        }
+                    }
+                    p {
+                        margin-bottom: 8px;
+                        @include sp {
+                            margin-bottom: get_sp(6);
+                        }
+                    }
+                }
+                .box_txt {
+                    border-radius: 10px;
+                    background-color: #ffffff;
+                    padding: 16px 20px 14px;
+                    text-align: left;
+                    margin-bottom: 8px;
+                    @include sp {
+                        border-radius: get_sp(10);
+                        padding: get_sp(10) get_sp(8);
+                        margin-bottom: get_sp(8);
+                    }
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    h4 {
+                        font-weight: bold;
+                        margin-bottom: 6px;
+                        line-height: 22px;
+                        @include sp {
+                            font-size: get_sp(14);
+                            line-height: get_sp(20);
+                        }
+                    }
+                    span {
+                        display: block;
+                        line-height: 22px;
+                        @include sp {
+                            line-height: get_sp(18);
+                            font-size: get_sp(13);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
