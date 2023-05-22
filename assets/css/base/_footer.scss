@@ -6,16 +6,38 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #4484CE;
+        background-color: #4484ce;
         padding: 24px 0 23px;
+        @include sp {
+            padding: get_sp(15) get_sp(24) get_sp(14);
+            flex-wrap: wrap;
+        }
         a {
             @include text(12px, 17px, #fff, 500);
+            @include sp {
+                @include textRes(get_sp(10), get_sp(12));
+                display: block;
+            }
         }
         li {
             padding: 0 17px;
             border-right: 1px solid #fff;
+            @include sp {
+                padding: 0 get_sp(12);
+                margin-bottom: get_sp(12);
+            }
             &:last-child {
                 border-right: 0;
+                @include sp {
+                    border-right: 1px solid #fff;
+                    margin-bottom: 0;
+                }
+            }
+            &:nth-last-child(2) {
+                @include sp {
+                    margin-bottom: 0;
+                    border-left: 1px solid #fff;
+                }
             }
         }
     }
@@ -24,35 +46,62 @@ footer {
         color: #1077ba;
         background: #e3f1f9;
         padding: 15px;
+        @include sp {
+            font-size: get_sp(10);
+            padding: get_sp(8);
+        }
     }
     &.page_list {
         .logo {
             width: 233px;
             margin-bottom: 35px;
+            @include sp {
+                width: get_sp(233);
+                margin-bottom: get_sp(22);
+            }
         }
         .footer_main_wrapper {
-            background-color: #4484CE;
+            background-color: #4484ce;
             text-align: left;
         }
         .footer_main {
             @include maxWidth(1230px);
             padding: 81px 15px 0;
+            @include sp {
+                max-width: 100%;
+                padding: get_sp(30) get_sp(16) 0;
+            }
         }
         .search_list {
             display: flex;
             align-items: flex-start;
             margin-bottom: 47px;
+            @include sp {
+                flex-direction: column;
+                margin-bottom: get_sp(36);
+            }
             h3 {
-                @include text(16px, 22px, #fff,bold);
+                @include text(16px, 22px, #fff, bold);
                 margin-bottom: 17px;
+                @include sp {
+                    @include textRes(get_sp(16), get_sp(22));
+                    margin-bottom: get_sp(18);
+                }
             }
             .item {
                 margin-bottom: 15px;
+                @include sp {
+                    margin-bottom: get_sp(23);
+                }
             }
         }
         .search_diff {
             width: 28.83%;
             margin-right: 64px;
+            @include sp {
+                width: 100%;
+                margin-right: 0;
+            }
         }
         .search_location {
             flex: 1;
@@ -62,13 +111,24 @@ footer {
             .location {
                 width: 130px;
                 @include text(14px, 20px, #fff, 400);
+                @include sp {
+                    width: get_sp(100);
+                    flex-shrink: 0;
+                    @include textRes(get_sp(13), get_sp(18));
+                }
             }
         }
         .result {
             padding-left: 20px;
+            @include sp {
+                padding-left: get_sp(16);
+            }
             a {
                 @include text(14px, 20px, #fff, 400);
                 text-decoration: underline;
+                @include sp {
+                    @include textRes(get_sp(13), get_sp(18));
+                }
             }
             ul {
                 display: flex;
@@ -78,77 +138,12 @@ footer {
             li {
                 margin-right: 15px;
                 margin-bottom: 16px;
+                @include sp {
+                    margin-right: get_sp(19);
+                    margin-bottom: get_sp(9);
+                }
                 &:last-child {
                     margin-right: 0;
-                }
-            }
-        }
-        .contact {
-            display: flex;
-            position: relative;
-            justify-content: flex-end;
-            align-items: center;
-            padding: 20px 14px;
-            @include maxWidth(1230px);
-            &::before {
-                content: '';
-                @include bgsetup('../images/footer_woman.svg', center, contain);
-                width: 104px;
-                height: 132px;
-                display: block;
-                position: absolute;
-                left: 0px;
-                transform: rotateY(180deg);
-                bottom: 0;
-            }
-            h2 {
-                @include text(28px, 36px, #37434C, bold);
-                margin-right: 40px;
-                span {
-                    position: relative;
-                    display: block;
-                    &::after {
-                        content: '';
-                        width: 100%;
-                        height: 10px;
-                        border-radius: 10px;
-                        display: block;
-                        position: absolute;
-                        bottom: 0;
-                        left: 0;
-                        z-index: -1;
-                        background-color: #FBC500;
-                    }
-                }
-            }
-            .phone {
-                display: flex;
-                align-items: center;
-                margin-right: 16px;
-                .thumb {
-                    width: 56px;
-                    margin-right: 8px;
-                }
-                .phone_txt {
-                    p {
-                        @include text(16px, 22px, #37434C, 400);
-                        margin-bottom: 5px;
-                    }
-                    h3 {
-                        @include text(42px, 42px, #F19F4D, bold);
-                    }
-                }
-            }
-            .email {
-                background-color: #4484CE;
-                display: flex;
-                padding: 15px 55px 16px 27px;
-                border-radius: 10px;
-                align-items: center;
-                @include text(18px, 25px, #fff, bold);
-                .thumb {
-                    width: 33px;
-                    margin-right: 21px;
                 }
             }
         }

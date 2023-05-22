@@ -11,20 +11,28 @@ a {
 */
 .breadcum {
     text-align: left;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto 15px;
     ul {
         display: flex;
         align-items: center;
+        @include sp {   
+            display: initial;
+        }
     }
     li {
         display: flex;
         align-items: center;
         margin-right: 12px;
+        @include sp {
+            margin-right: get_sp(8);
+            display: inline;
+        }
         &::after {
             content: '>';
             display: block;
+            @include sp {
+                display: inline;
+                @include textRes(get_sp(12), get_sp(16));
+            }
         }
         &:last-child {
             &::after {
@@ -35,6 +43,10 @@ a {
     a, span {
         @include text(11px, 13px, #37434C, 400);
         margin-right: 12px;
+        @include sp {
+            @include textRes(get_sp(10), get_sp(16));
+            margin-right: get_sp(8);
+        }
     }
 }
 
@@ -602,6 +614,33 @@ a {
         @include sp {
             font-size: get_sp(13);
             line-height: get_sp(20);
+        }
+    }
+}
+
+/*
+    title section relative
+*/
+.title_section_relative {
+    @include text(22px, 30px, #00192a, 400);
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    @include sp {
+        @include textRes(get_sp(16), get_sp(22));
+    }
+    span {
+        position: absolute;
+        font-family: $font-futura;
+        @include text(71px, 91px, #bad7eb, 300);
+        bottom: -8px;
+        left: -7px;
+        width: 100%;
+        z-index: -1;
+        @include sp {
+            @include textRes(get_sp(34), get_sp(43));
+            bottom: get_sp(2);
+            left: get_sp(-5);
         }
     }
 }

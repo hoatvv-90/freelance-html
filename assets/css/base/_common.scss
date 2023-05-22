@@ -16,8 +16,10 @@ body {
     background-image: linear-gradient(to left bottom,#EBF2F5 0,#EBF2F5 8%,transparent 10%,transparent 50%,#EBF2F5 50%,#EBF2F5 58%,transparent 58%,transparent 100%);
     background-size: 12px 12px;
     &.hidden {
-        height: 100%;
-        overflow: hidden;
+        @include sp {
+            height: 100%;
+            overflow: hidden;
+        }
     }
 }
 * {
@@ -69,6 +71,11 @@ input[type="text"], input[type="password"], input[type="email"] {
     -moz-appearance: none;
     appearance: none;
     outline: none;
+    border: 0;
+}
+
+select {
+    border: 0;
 }
 
 button {
