@@ -73,12 +73,20 @@
         $('#search_bar .conditional').on('click', function() {
             $(this).toggleClass('active');
             $('#search_bar .list_search').slideToggle('active');
-        })
+        });
 
         $('header .hamburger').on('click', function(){
             $(this).toggleClass('active');
             $('.header_content nav').toggleClass('active');
             $('body').toggleClass('hidden');
+        });
+
+        $('.select_item select').on('change', function() {
+            if($(this).val() === "") {
+                $(this).css('color','#BAD7EB');
+            } else {
+                $(this).css('color','#37434C');
+            }
         })
     };
 

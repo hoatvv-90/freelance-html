@@ -6,10 +6,10 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #4484CE;
+        background-color: #4484ce;
         padding: 24px 0 23px;
         @include sp {
-            padding: 0 get_sp(24) get_sp(14);
+            padding: get_sp(15) get_sp(24) get_sp(14);
             flex-wrap: wrap;
         }
         a {
@@ -27,8 +27,11 @@ footer {
                 margin-bottom: get_sp(12);
             }
             &:last-child {
-                border-right: 1px solid #fff;
-                margin-bottom: 0;
+                border-right: 0;
+                @include sp {
+                    border-right: 1px solid #fff;
+                    margin-bottom: 0;
+                }
             }
             &:nth-last-child(2) {
                 @include sp {
@@ -58,7 +61,7 @@ footer {
             }
         }
         .footer_main_wrapper {
-            background-color: #4484CE;
+            background-color: #4484ce;
             text-align: left;
         }
         .footer_main {
@@ -78,7 +81,7 @@ footer {
                 margin-bottom: get_sp(36);
             }
             h3 {
-                @include text(16px, 22px, #fff,bold);
+                @include text(16px, 22px, #fff, bold);
                 margin-bottom: 17px;
                 @include sp {
                     @include textRes(get_sp(16), get_sp(22));

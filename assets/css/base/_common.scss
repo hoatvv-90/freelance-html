@@ -71,6 +71,11 @@ input[type="text"], input[type="password"], input[type="email"] {
     -moz-appearance: none;
     appearance: none;
     outline: none;
+    border: 0;
+}
+
+select {
+    border: 0;
 }
 
 button {
