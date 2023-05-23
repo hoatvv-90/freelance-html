@@ -10,7 +10,7 @@
     if (_width <= _spmode) {
     }
     // loading after
-    window.onload = function () {
+    $(window).on('load', function(){
         scrollAnimation('.list_scroll a');
         $('#search_bar .list_search a').on('click', function(e){
             e.preventDefault();
@@ -81,14 +81,7 @@
             $('body').toggleClass('hidden');
         });
 
-        $('.select_item select').on('change', function() {
-            if($(this).val() === "") {
-                $(this).css('color','#BAD7EB');
-            } else {
-                $(this).css('color','#37434C');
-            }
-        })
-    };
+    })
 
     function activeTab(obj) {
         $('.tabs_list ul li').removeClass('active_tab');
@@ -153,4 +146,3 @@
     };
 
 })(jQuery);
-
