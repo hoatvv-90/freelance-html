@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kagu html</title>
+    <title>Authentication complete</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta property="fb:app_id" content="ー" />
@@ -52,7 +52,7 @@
     </script>
 </head>
 
-<body class="page_fakomi complete_email">
+<body class="page_fakomi complete_email authentication">
     <!-- header -->
     <header id="header" class="header">
         <div class="inner">
@@ -106,7 +106,8 @@
                             <input type="text" placeholder="フリーワード">
                             <button>
                                 <div class="thumb">
-                                    <img src="assets/images/icon_search.svg" alt="logo" loading="lazy" width="233" height="59">
+                                    <img src="assets/images/icon_search.svg" alt="logo" loading="lazy" width="233"
+                                        height="59">
                                 </div>
                                 検索する
                             </button>
@@ -151,47 +152,43 @@
                         <ul>
                             <li><a href="#">ファクタリング会社の口コミ</a></li>
                             <li><a href="#">世界一わかりやすい公的支援金（補助金・助成金）</a></li>
-                            <li><span>メールアドレス認証完了 / ユーザー情報登録</span></li>
+                            <li><span>メールアドレス認証完了 / 士業情報登録</span></li>
                         </ul>
                     </div>
                     <div class="form_wrapper">
-                        <h2 class="title_section_relative">メールアドレス認証完了<span>COMPLETED</span></h2>
+                        <h2 class="title_section_relative">メールアドレス認証完了<span><strong>AUTHENTICATION</strong> COMPLETED</span></h2>
                         <form action="">
-                            <h2>ユーザー情報登録</h2>
+                            <h2>士業情報登録</h2>
                             <div class="form_content blue">
                                 <h4>メールアドレス・パスワードの登録、認証が完了しました。<span>下記の項目を入力してください。</span></h4>
-                                <div class="item_contact required">
-                                    <h3><span>必須</span>主事業種類</h3>
-                                    <div class="select_item">
-                                        <select name="business_type" id="business_type">
-                                            <option value="" selected disabled hidden>貴社の主要事業を選択してください</option>
-                                            <option value="Option1">Option1</option>
-                                            <option value="Option2">Option2</option>
-                                            <option value="Option3">Option3</option>
-                                        </select>
+                                <div class="item_contact">
+                                    <h3><span>必須</span>屋号名・会社名</h3>
+                                    <div class="input_group">
+                                        <input type="text" placeholder="例）税理士法人ネットKEN" name="company_name" id="company_name">
                                     </div>
                                 </div>
-                                <div class="item_contact required">
-                                    <h3><span>必須</span>事業形態</h3>
-                                    <div class="select_item">
-                                        <select name="business_form" id="business_form">
-                                            <option value="" selected disabled hidden>貴社の事業形態を選択してください</option>
-                                            <option value="Option1">Option1</option>
-                                            <option value="Option2">Option2</option>
-                                            <option value="Option3">Option3</option>
-                                        </select>
+                                <div class="item_contact">
+                                    <h3><span>必須</span>メールアドレス</h3>
+                                    <div class="input_group">
+                                        <input type="text" placeholder="例）xxxxxx@gmail.com" name="email" id="email">
                                     </div>
                                 </div>
-                                <div class="item_contact required">
-                                    <h3><span>必須</span>郵便番号（ハイフン不要）</h3>
+                                <div class="item_contact">
+                                    <h3><span>必須</span>電話番号（ハイフンは不要です）</h3>
+                                    <div class="input_group">
+                                        <input type="text" placeholder="例）税理士法人ネットKEN" name="phone_num" id="phone_num">
+                                    </div>
+                                </div>
+                                <div class="item_contact">
+                                    <h3>郵便番号</h3>
                                     <div class="input_group has_button">
                                         <div class="input_item">
                                             <input type="text" placeholder="例）1510000" name="post_code" id="post_code">
                                         </div>
-                                        <button class="autofill">住所自動入力</button>
+                                        <button>住所自動入力</button>
                                     </div>
                                 </div>
-                                <div class="item_contact required">
+                                <div class="item_contact">
                                     <h3><span>必須</span>都道府県</h3>
                                     <div class="select_item">
                                         <select name="district" id="district">
@@ -208,12 +205,6 @@
                                         <input type="text" placeholder="市区町村を入力してください" name="urban" id="urban">
                                     </div>
                                 </div>
-                                <div class="item_contact required">
-                                    <h3><span>必須</span>電話番号（ハイフン不要）</h3>
-                                    <div class="input_group">
-                                        <input type="text" placeholder="例）0123456789" name="phone_num" id="phone_num">
-                                    </div>
-                                </div>
                                 <div class="item_contact">
                                     <h3>お名前（ご担当者名）</h3>
                                     <div class="input_group">
@@ -221,27 +212,8 @@
                                             id="person_charge">
                                     </div>
                                 </div>
-                                <div class="item_contact">
-                                    <h3>資本金</h3>
-                                    <div class="input_group">
-                                        <input type="text" placeholder="資本金額を選択してください" name="capital" id="capital">
-                                    </div>
-                                </div>
-                                <div class="item_contact">
-                                    <h3>従業員数</h3>
-                                    <div class="input_group">
-                                        <input type="text" placeholder="従業員数を選択してください" name="employees_num"
-                                            id="employees_num">
-                                    </div>
-                                </div>
-                                <div class="item_contact">
-                                    <h3>創業年月日</h3>
-                                    <div class="input_group">
-                                        <input type="text" placeholder="例）2023/06/01" name="founding" id="founding">
-                                    </div>
-                                </div>
                                 <div class="item_contact proud_major">
-                                    <h3>資金調達目的</h3>
+                                    <h3>得意領域</h3>
                                     <div class="checkbox_group">
                                         <label class="checkbox_item">
                                             <input type="checkbox" name="checkbox01" id="checkbox01">
@@ -270,15 +242,23 @@
                                     </div>
                                 </div>
                                 <div class="item_contact">
-                                    <div class="button_group">
-                                        <div class="button_item">
-                                            <h3>財務諸表</h3>
-                                            <button>ファイルを選択してください</button>
-                                        </div>
-                                        <div class="button_item">
-                                            <h3>登記簿謄本</h3>
-                                            <button>ファイルを選択してください</button>
-                                        </div>
+                                    <h3>ホームページURL</h3>
+                                    <div class="input_group">
+                                        <input type="text" placeholder="例）https://fackomi.com/" name="home_url"
+                                            id="home_url">
+                                    </div>
+                                </div>
+                                <div class="item_contact industry">
+                                    <h3>士業種別</h3>
+                                    <div class="checkbox_group">
+                                        <label class="checkbox_item">
+                                            <input type="checkbox" name="checkbox01" id="checkbox01">
+                                            <span>社労士</span>
+                                        </label>
+                                        <label class="checkbox_item">
+                                            <input type="checkbox" name="checkbox02" id="checkbox02">
+                                            <span>税理士</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
@@ -287,7 +267,7 @@
                                     <input type="checkbox" name="policy" id="policy">
                                     <span><a href="#">利用規約</a>に同意して</span>
                                 </label>
-                                <button class="btn btn_orange disable" disabled="disabled" type="submit" id="register">会員登録</button>
+                                <button class="btn btn_orange">会員登録</button>
                             </div>
                         </form>
                     </div>

@@ -1,0 +1,35 @@
+.user_login {
+    #main_content {
+        @include maxWidth(1230px, 115px);
+        padding: 0 15px;
+        @include sp {
+            max-width: 100%;
+            padding: get_sp(117) get_sp(16) 0;
+            margin-bottom: get_sp(80);
+        }
+        .inner {
+            @include sp {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+        .breadcum {
+            margin-bottom: 70px;
+            @include sp {
+                margin-bottom: 0;
+            }
+        }
+        .form_submit {
+            padding-bottom: 20px;
+            @include sp {
+                padding-bottom: get_sp(20);
+            }
+        }
+        .list_btn {
+            margin-top: 30px;
+            @include sp {
+                margin-top: get_sp(21);
+            }
+        }
+    }
+}
