@@ -1,10 +1,4 @@
 .page_list {
-    min-width: 1230px;
-    overflow-x: scroll;
-    @include sp {
-        min-width: unset;
-        overflow-x: hidden;
-    }
     &.active {
         position: relative;
         overflow-y: hidden;
