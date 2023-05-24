@@ -132,6 +132,15 @@
         });
     }
 
+    $('.btn_show_login').on('click', function(e) {
+        e.preventDefault();
+        $('#form_login').toggleClass('active');
+    });
+    $('.menu_avatar').on('click', function(e) {
+        e.preventDefault();
+        $('.list_item_menu').toggleClass('active');
+    });
+
     //resize after
     window.onresize = function () {
         _width = $(window).width();

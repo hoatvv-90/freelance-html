@@ -28,6 +28,40 @@
                 padding: 0 get_sp(16);
             }
         }
+        #form_login {
+            display: none;
+            &.active {
+                display: block;
+            }
+            form {
+                box-shadow: none;
+            }
+            .form_content {
+                &.blue {
+                    width: 696px;
+                    margin: 0 auto;
+                    padding: 50px;
+                }
+            }
+            .item_contact {
+                &.proud_major_second {
+                    .checkbox_group {
+                        .checkbox_item {
+                            width: 48.5%;
+                            &:nth-child(2n) {
+                                margin-right: 0;
+                            }
+                            &:nth-child(3n) {
+                                margin-right: 17px;
+                                @include sp {
+                                    margin-right: get_sp(16);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
     .item_detail {
         margin-bottom: 45px;
@@ -694,7 +728,7 @@
             @include sp {
                 margin-bottom: get_sp(22);
             }
-            a {
+            .btn_show_login {
                 color: #FFFFFF;
                 font-size: 18px;
                 line-height: 25px;
@@ -703,6 +737,7 @@
                 background-color: #F19F4D;
                 border-radius: 10px;
                 display: inline-block;
+                border: none;
                 @include sp {
                     font-size: get_sp(16);
                     line-height: get_sp(22);
@@ -775,6 +810,14 @@
                             display: none;
                         }
                     }
+                    &.img_fix {
+                        img {
+                            width: 51px;
+                            @include sp {
+                                width: get_sp(32);
+                            }
+                        }
+                    }
                 }
                 .content {
                     background-color: #EFF7FC;
@@ -782,7 +825,7 @@
                     position: relative;
                     padding: 15px 16px 22.5px;
                     flex: 1;
-                    margin-left: 18px;
+                    margin-left: 27px;
                     @include sp {
                         margin-left: get_sp(23);
                         border-radius: get_sp(10);
@@ -995,13 +1038,14 @@
                     .icon_process {
                         width: 26px;
                         height: 26px;
-                        border-radius: 50%;
+                        border-radius: 6px;
                         background-color: #FBC500;
                         display: flex;
                         align-items: center;
                         @include sp {
                             width: get_sp(18);
                             height: get_sp(18);
+                            border-radius: get_sp(6);
                         }
                         &:last-child {
                             background-color: #D6D9DA;
@@ -1139,7 +1183,7 @@
         }
     }
     /*
-      faq
+      contact
     */
     #contact {
         .inner {
