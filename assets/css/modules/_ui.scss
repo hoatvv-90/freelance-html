@@ -201,8 +201,6 @@ a {
                 padding: get_sp(7) get_sp(7) get_sp(6) get_sp(4);
                 font-size: get_sp(12);
             }
-            span {
-            }
         }
     }
     .txt_note {
@@ -724,6 +722,7 @@ a {
             @include textRes(get_sp(34), get_sp(43));
             bottom: get_sp(2);
             left: get_sp(-5);
+            white-space: nowrap;
         }
         strong {
             @include sp {
@@ -769,6 +768,9 @@ a {
             }
             &.blue {
                 background-color: #E8F3FE;
+            }
+            &.yellow {
+                background-color: #FEEFAD;
             }
             h4 {
                 @include text(16px, 23px, #37434C, 400);
@@ -894,6 +896,31 @@ a {
                     color: #BAD7EB;
                 }
             }
+            input[type="password"] {
+                letter-spacing: 2px;
+            }
+        }
+        .textarea_group {
+            textarea {
+                padding: 16px 20px;
+                border-radius: 10px;
+                background-color: #fff;
+                @include text(16px, 22px, #37434C, 400);
+                height: 204px;
+                resize: none;
+                width: 100%;
+                border: 0;
+                outline: none;
+                @include sp {
+                    padding: get_sp(11) get_sp(10);
+                    border-radius: get_sp(8);
+                    @include textRes(get_sp(13), get_sp(18));
+                    height: get_sp(147);
+                }
+                &::placeholder {
+                    color: #BAD7EB;
+                }
+            }
         }
         .checkbox_group {
             display: flex;
@@ -903,7 +930,7 @@ a {
             .checkbox_item {
                 display: flex;
                 align-items: center;
-                padding: 16px 15px 16px;
+                padding: 16px 12px 16px 15px;
                 background-color: #fff;
                 border-radius: 10px;
                 margin-bottom: 8px;
@@ -925,7 +952,7 @@ a {
                     height: 22px;
                     display: block;
                     flex-shrink: 0;
-                    margin-right: 9px;
+                    margin: 0 9px 0 0;
                     cursor: pointer;
                     @include bgsetup('../images/icon_checkbox.svg', center, contain);
                     @include sp {
@@ -939,7 +966,7 @@ a {
                 }
             }
         }
-        &.proud_major {
+        &.one_third {
             .checkbox_item {
                 width: 31.2%;
                 margin-right: 17px;
@@ -969,7 +996,7 @@ a {
                 }
             }
         }
-        &.industry {
+        &.one_half {
             .checkbox_item {
                 width: 46.8%;
                 margin-right: 35px;
@@ -1018,14 +1045,51 @@ a {
                 }
             }
         }
-        .error {
-            @include text(12px, 17px, #DF481F, bold);
-            margin-top: 9px;
-            display: block;
-            text-align: left;
+    }
+    .error {
+        @include text(12px, 17px, #DF481F, bold);
+        margin-top: 9px;
+        display: block;
+        text-align: left;
+        @include sp {
+            @include textRes(get_sp(12), get_sp(17));
+            margin-top: get_sp(8);
+        }
+    }
+    .agree {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 7px;
+        @include sp {
+            margin-bottom: get_sp(7);
+        }
+        input[type="checkbox"] {
+            appearance: none;
+            border: none;
+            background-color: #D6D9DA;
+            cursor: pointer;
+            width: 17px;
+            height: 17px;
+            margin: 0 10px 0 0;
             @include sp {
-                @include textRes(get_sp(12), get_sp(17));
-                margin-top: get_sp(8);
+                width: get_sp(17);
+                height: get_sp(17);
+                margin: 0 get_sp(10) 0 0;
+            }
+            &:checked {
+                @include bgsetup("../images/icon_checked.svg", center, 70%);
+            }
+        }
+        span {
+            @include text(14px, 17px, #37434C, 400);
+            @include sp {
+                @include textRes(get_sp(12), get_sp(14));
+            }
+            a {
+                color: #4484CE;
+                font-weight: bold;
+                text-decoration: underline;
             }
         }
     }
@@ -1034,43 +1098,6 @@ a {
         background-color: #fff;
         @include sp {
             padding: get_sp(21) 0 get_sp(20);
-        }
-        .agree {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 7px;
-            @include sp {
-                margin-bottom: get_sp(7);
-            }
-            input[type="checkbox"] {
-                appearance: none;
-                border: none;
-                background-color: #D6D9DA;
-                cursor: pointer;
-                width: 17px;
-                height: 17px;
-                margin: 0 10px 0 0;
-                @include sp {
-                    width: get_sp(17);
-                    height: get_sp(17);
-                    margin: 0 get_sp(10) 0 0;
-                }
-                &:checked {
-                    @include bgsetup("../images/icon_checked.svg", center, 70%);
-                }
-            }
-            span {
-                @include text(14px, 17px, #37434C, 400);
-                @include sp {
-                    @include textRes(get_sp(12), get_sp(14));
-                }
-                a {
-                    color: #4484CE;
-                    font-weight: bold;
-                    text-decoration: underline;
-                }
-            }
         }
         h3 {
             @include text(22px, 30px, #37434C, bold);
@@ -1090,6 +1117,7 @@ a {
         width: 320px;
         margin: 0 auto; 
         border-radius: 60px;
+        display: block;
         @include text(18px, 25px, #fff, bold);
         @include sp {
             padding: get_sp(14) get_sp(10) get_sp(13);

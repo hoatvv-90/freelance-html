@@ -1,5 +1,5 @@
-.complete_email {
-    #complete_email_section {
+.member_registration {
+    #main_content {
         @include maxWidth(1230px, 115px);
         padding: 0 15px;
         @include sp {
@@ -19,6 +19,12 @@
                 flex-direction: column-reverse;
             }
         }
+        .error {
+            margin-top: 14px;
+            @include sp {
+                margin-top: get_sp(8);
+            }
+        }
         #policy-error {
             margin-bottom: 14px;
             text-align: center;
@@ -26,13 +32,11 @@
                 margin-bottom: get_sp(10);
             }
         }
-    }
-    &.authentication {
-        .form_content {
+        .list_btn {
+            margin-top: 36px;
             @include sp {
-                padding-bottom: get_sp(20);
+                margin-top: get_sp(21);
             }
         }
     }
 }
-
