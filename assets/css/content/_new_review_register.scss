@@ -1,0 +1,51 @@
+.new_review_register {
+    #main_content {
+        @include maxWidth(1230px, 115px);
+        padding: 0 15px;
+        @include sp {
+            max-width: 100%;
+            padding: get_sp(133) get_sp(16) 0;
+            margin-bottom: get_sp(80);
+        }
+        .breadcum {
+            margin-bottom: 70px;
+            @include sp {
+                margin-bottom: 0;
+            }
+        }
+        .inner {
+            @include sp {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+        }
+        .form_content {
+            padding-left: 316px;
+            padding-right: 319px;
+            @include sp {
+                padding: get_sp(17) get_sp(8) get_sp(16);
+            }
+            h4 {
+                text-align: left;
+                margin: 0 -46px 32px;
+                @include sp {
+                    margin: 0 auto get_sp(14);
+                }
+            }
+            .checkbox_item {
+                width: 46.9%;
+                @include sp {
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: get_sp(7);
+                }
+            }
+        }
+        .form_submit {
+            padding-top: 30px;
+            @include sp {
+                padding-top: get_sp(20);
+            }
+        }
+    }
+}

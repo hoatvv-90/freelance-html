@@ -31,9 +31,9 @@
 
         $('.main_tabs a').on('click', function(e){
             e.preventDefault();
-            $('.main_tabs a.active').removeClass('active')
+            $('.main_tabs li.active').removeClass('active')
             const idTabActive = $(this).attr('href');
-            $(this).addClass('active');
+            $(this).parent('li').addClass('active');
             $('.location_tabs .sub_tabs.active').removeClass('active');
             $(`.location_tabs ${idTabActive}`).addClass('active');
         });
@@ -53,12 +53,19 @@
 
         $('.sub_tabs a').on('click', function(e){
             e.preventDefault();
-            $('.sub_tabs a.active').removeClass('active')
+            $('.sub_tabs li.active').removeClass('active')
             const idTabActive = $(this).attr('href');
-            $(this).addClass('active');
+            $(this).parent('li').addClass('active');
             $('.list_choice').show();
             $('.list_choice ul.active').removeClass('active');
             $(`.list_choice ${idTabActive}`).addClass('active');
+        });
+
+        $('.list_choice li').on('click', function(){
+            $(this).hasClass('active') ? $(this).removeClass('active') : $(this).addClass('active');
+            if($(this).index() == 0) {
+                $(this).nextAll('li').toggleClass('active');
+            }
         })
 
         $(document).mouseup(function(e) {
@@ -72,7 +79,7 @@
 
         $('#search_bar .conditional').on('click', function() {
             $(this).toggleClass('active');
-            $('#search_bar .list_search').slideToggle('active');
+            $('#search_bar .list_search.sp').slideToggle('active');
         });
 
         $('header .hamburger').on('click', function(){

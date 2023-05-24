@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Kagu html</title>
+    <title>Page list</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <meta property="fb:app_id" content="ー" />
@@ -151,7 +151,7 @@
                     <div class="conditional util_sp">
                         検索条件
                     </div>
-                    <div class="list_search">
+                    <div class="list_search sp">
                         <ul>
                             <li>
                                 <a href="#receive_difficult">
@@ -231,9 +231,86 @@
                                 この検索条件を保存
                             </button>
                         </form>
-                        <div class="clear_wrapper util_sp">
+                        <div class="clear_wrapper">
                             <button class="clear">すべてクリア</button>
                         </div>
+                    </div>
+                    <div class="list_search pc">
+                        <ul>
+                            <li>
+                                <a href="#receive_difficult">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_star_circle.svg" alt="copyright" loading="lazy"
+                                            width="11" height="20">
+                                    </div>
+                                    受給難易度
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#time_to_receive">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_calendar.svg" alt="copyright" loading="lazy"
+                                            width="11" height="44">
+                                    </div>
+                                    受給までの期間
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#modal_location">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_spot.svg" alt="copyright" loading="lazy" width="11"
+                                            height="44">
+                                    </div>
+                                    エリア
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#business_entity">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_tower.svg" alt="copyright" loading="lazy"
+                                            width="11" height="44">
+                                    </div>
+                                    事業体
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#industry">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_note.svg" alt="copyright" loading="lazy"
+                                            width="1920" height="44">
+                                    </div>
+                                    業種
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                            <li>
+                                <a href="#use_purpose">
+                                    <div class="thumb">
+                                        <img src="assets/images/icon_light.svg" alt="copyright" loading="lazy"
+                                            width="1920" height="44">
+                                    </div>
+                                    利用目的
+                                </a>
+                                <button class="plus"></button>
+                            </li>
+                        </ul>
+                        <form action="">
+                            <input type="text" placeholder="フリーワード">
+                            <button class="search">
+                                <div class="thumb">
+                                    <img src="assets/images/icon_search.svg" alt="logo" loading="lazy" width="233"
+                                        height="59">
+                                </div>
+                                この条件で検索する
+                            </button>
+                            <button class="save">
+                                この検索条件を保存
+                            </button>
+                        </form>
                     </div>
                     <div class="include">
                         <label for="include" class="label_include">
@@ -1611,15 +1688,15 @@
                         </div>
                         <div class="location_tabs">
                             <ul class="main_tabs">
-                                <li><a href="#sub_tab_01">北海道・東北</a></li>
+                                <li class="active"><a href="#sub_tab_01">北海道・東北</a></li>
                                 <li><a href="#sub_tab_02">関東</a></li>
                                 <li><a href="#sub_tab_03">中部</a></li>
                                 <li><a href="#sub_tab_04">近畿</a></li>
                                 <li><a href="#sub_tab_05">中国・四国</a></li>
                                 <li><a href="#sub_tab_06">九州・沖縄</a></li>
                             </ul>
-                            <ul class="sub_tabs" id="sub_tab_01">
-                                <li><a href="#sub_tabs_content_01">茨城県</a></li>
+                            <ul class="sub_tabs active" id="sub_tab_01">
+                                <li class="active"><a href="#sub_tabs_content_01">茨城県</a></li>
                                 <li><a href="#sub_tabs_content_02">栃木県</a></li>
                                 <li><a href="#sub_tabs_content_03">群馬県</a></li>
                                 <li><a href="#sub_tabs_content_04">埼玉県</a></li>
@@ -1674,7 +1751,7 @@
                             </ul>
                         </div>
                         <div class="list_choice">
-                            <ul id="sub_tabs_content_01">
+                            <ul id="sub_tabs_content_01" class="active">
                                 <li>
                                     <label for="all" class="label_all">
                                         <input type="checkbox" name="all" id="all">
