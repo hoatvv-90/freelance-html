@@ -21,7 +21,7 @@ a {
     li {
         display: flex;
         align-items: center;
-        margin-right: 12px;
+        margin-right: 8px;
         @include sp {
             margin-right: get_sp(8);
             display: inline;
@@ -42,7 +42,7 @@ a {
     }
     a, span {
         @include text(11px, 13px, #37434C, 400);
-        margin-right: 12px;
+        margin-right: 8px;
         @include sp {
             @include textRes(get_sp(10), get_sp(16));
             margin-right: get_sp(8);
@@ -443,6 +443,88 @@ a {
         .purpose {
             display: flex;
             align-items: center;
+        }
+    }
+}
+
+/*
+    Contact banner Bottom
+*/
+.contact_banner_bottom {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    @include sp {
+        display: none;
+    }
+    .inner {
+        @include maxWidth(1230px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 20px 14px;
+        position: relative;
+        &::before {
+            content: "";
+            @include bgsetup("../images/footer_woman.svg", center, contain);
+            width: 104px;
+            height: 132px;
+            display: block;
+            position: absolute;
+            left: 0px;
+            transform: rotateY(180deg);
+            bottom: 0;
+        }
+    }
+    h2 {
+        @include text(28px, 36px, #37434c, bold);
+        margin-right: 40px;
+        span {
+            position: relative;
+            display: block;
+            &::after {
+                content: "";
+                width: 100%;
+                height: 10px;
+                border-radius: 10px;
+                display: block;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                background-color: #fbc500;
+            }
+        }
+    }
+    .phone {
+        display: flex;
+        align-items: center;
+        margin-right: 16px;
+        .thumb {
+            width: 56px;
+            margin-right: 8px;
+        }
+        .phone_txt {
+            p {
+                @include text(16px, 22px, #37434c, 400);
+                margin-bottom: 5px;
+            }
+            h3 {
+                @include text(42px, 42px, #f19f4d, bold);
+            }
+        }
+    }
+    .email {
+        background-color: #4484ce;
+        display: flex;
+        padding: 15px 55px 16px 27px;
+        border-radius: 10px;
+        align-items: center;
+        @include text(18px, 25px, #fff, bold);
+        .thumb {
+            width: 33px;
+            margin-right: 21px;
         }
     }
 }

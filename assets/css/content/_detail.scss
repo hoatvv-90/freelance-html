@@ -15,6 +15,12 @@
         @include sp {
             max-width: 100%;
         }
+        .breadcum {
+            margin-bottom: 15px;
+            @include sp {
+                margin: 0;
+            }
+        }
         .section {
             margin-bottom: 45px;
             @include sp {
