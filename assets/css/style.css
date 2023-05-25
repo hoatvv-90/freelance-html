@@ -5788,3 +5788,50 @@ footer.footer_group .result li:last-child {
     margin-top: 4.8837209302vw;
   }
 }
+
+.forgot_password #main_content {
+  max-width: 1230px;
+  width: 100%;
+  margin: 0 auto 115px;
+  padding: 0 15px;
+}
+@media (max-width: 768px) {
+  .forgot_password #main_content {
+    max-width: 100%;
+    padding: 27.2093023256vw 3.7209302326vw 0;
+    margin-bottom: 18.6046511628vw;
+  }
+}
+@media (max-width: 768px) {
+  .forgot_password #main_content .inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.forgot_password #main_content .breadcum {
+  margin-bottom: 70px;
+}
+@media (max-width: 768px) {
+  .forgot_password #main_content .breadcum {
+    margin-bottom: 0;
+  }
+}
+.forgot_password #main_content .form_content {
+  padding-bottom: 40px;
+}
+.forgot_password #main_content .list_btn {
+  margin-top: 35px;
+}
+@media (max-width: 768px) {
+  .forgot_password #main_content .list_btn {
+    margin-top: 4.8837209302vw;
+  }
+}
+.forgot_password #main_content .form_submit {
+  padding-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .forgot_password #main_content .form_submit {
+    padding-bottom: 4.6511627907vw;
+  }
+}

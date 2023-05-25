@@ -231,6 +231,28 @@
 
         });
 
+        $(".forgot_password #main_content form").validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                },
+            },
+            messages: {
+                email: {
+                    email: "有効なメールアドレスを入力してください",
+                    required: "メールアドレスを入力してください"
+                },
+            },
+            highlight: function (element, errorClass) {
+                $(element).closest('.input').addClass('has-error');
+            },
+            unhighlight: function (element, errorClass) {
+                $(element).closest('.input').removeClass('has-error');
+            },
+
+        });
+
         // on click for submit button in form
         $("#complete_email_section .form_submit button[type='submit']").on('click', function (e) {
             e.preventDefault();
@@ -286,6 +308,23 @@
         $(".member_registration .form_wrapper button[type='submit']").on('click', function (e) {
             e.preventDefault();
             if ($(".member_registration #main_content form").valid()) {
+                // do something
+            }
+            else {
+                $(".error").each(function () {
+                    if ($(this).text() != '') {
+                        $('html, body').animate({
+                            scrollTop: $(this).parents('.item_contact').offset().top - 100
+                        }, 1000);
+                    }
+                    return false;
+                });
+            }
+        });
+
+        $(".forgot_password .form_wrapper button[type='submit']").on('click', function (e) {
+            e.preventDefault();
+            if ($(".forgot_password #main_content form").valid()) {
                 // do something
             }
             else {
